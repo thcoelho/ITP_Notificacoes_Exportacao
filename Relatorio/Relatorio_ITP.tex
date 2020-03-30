@@ -1,0 +1,51 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage[style=abnt, backend=biber]{biblatex}
+\usepackage{csquotes}
+\addbibresource{Referencias.bib}
+\usepackage{times}
+
+\title{Relatório ITP}
+\author{Thiago Oliveira Coelho}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\section{Introdução}
+
+Com o advento da globalização, as barreiras tradicionais ao comércio internacional, como as tarifárias, têm se tornado menores o que diminui as oportunidades para implementação de medidas protecionistas.\cite{maskus2000quantifying}. Isso tem causado aparecimento de diversas barreiras não tarifárias (BNTs), que impedem o fluxo internacional de bens.
+Apesar de estas barreiras poderem ser legítimas, por exemplo para corrigir eventuais externalidades negativas advindas do produto importado,  o fato é que estas terão impacto nas importações do país. Este impacto pode ser positivo ou negativo, dependendo do setor analisado. Em geral, normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}.
+
+\section{Metodologia}
+
+Considerando os trabalhos que visam estabelecer quantitativamente o impacto das notificações, será utilizado um modelo de gravidade cujos estimadores serão estabelecidos por PPML (Poisson Pseudo Maximum Likelihood). 
+
+\subsection{Modelos de gravidade}
+
+Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade. 
+
+\section{Dados e fontes}
+
+Bases de dados utilizadas:
+
+\begin{enumerate}
+    \item Notificações: https://www.epingalert.org/en;
+    \item Valor de exportações: https://comtrade.un.org/;
+    \item PIB : Banco mundial, \cite{WB};
+    \item Distanciamento: \cite{CEPII} 
+\end{enumerate}
+
+\printbibliography
+
+\end{document}

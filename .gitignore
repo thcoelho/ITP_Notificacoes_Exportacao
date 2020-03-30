@@ -1,0 +1,17 @@
+Materiais/
+Ponto/
+Pesquisa_Innovare/
+*.ini
+Projeto_ITP.pdf
+*.bcf
+*.aux
+*.fls
+*.blg
+*.xml
+*.synctex.gz
+*.bbl
+*.log
+*.fls*.fdb_latexmk
+*.json
+.vscode/
+.ipynb_checkpoints/
