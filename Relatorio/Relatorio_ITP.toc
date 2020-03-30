@@ -7,4 +7,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Modelos de gravidade}{2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Obtenção de estimadores}{2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Dados e fontes}{2}%
