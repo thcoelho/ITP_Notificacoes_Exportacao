@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Relatorio_ITP"] 1584550942 "Relatorio_ITP.bcf" "Relatorio_ITP.bbl" "Relatorio_ITP" 1585597272
+["biber Relatorio_ITP"] 1584550942 "Relatorio_ITP.bcf" "Relatorio_ITP.bbl" "Relatorio_ITP" 1585779625
   "Referencias.bib" 1584551032 9736 d140c1ed9a8f235a5ef31605ebf7a7e2 ""
-  "Relatorio_ITP.bcf" 1585597271 106700 4ee89d31813244f9e577faa26fe94dbd "pdflatex"
+  "Relatorio_ITP.bcf" 1585779625 106700 4ee89d31813244f9e577faa26fe94dbd "pdflatex"
   (generated)
   "Relatorio_ITP.blg"
   "Relatorio_ITP.bbl"
-["pdflatex"] 1585597267 "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf" "Relatorio_ITP" 1585597272
+["pdflatex"] 1585779621 "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf" "Relatorio_ITP" 1585779625
   "C:/Users/Thiago/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1585230036 9903359 66145bb738362e0dd7c1b559e58eab05 ""
   "C:/Users/Thiago/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1585166186 1653775 887d9a52becc11e2822e0e41a9378ddc ""
   "C:/Users/Thiago/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -99,19 +99,19 @@
   "C:/Users/Thiago/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.sty" 1580644886 1619 d4cd7231755dd1dfa89af8ceddfb0e4d ""
   "C:/Users/Thiago/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Thiago/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xpatch/xpatch.sty" 1349388584 8322 5f9c642edadff4ce819c39eb7dccea61 ""
-  "Relatorio_ITP.aux" 1585597271 1950 532597645576ff8271416da02ca9c215 "pdflatex"
+  "Relatorio_ITP.aux" 1585779625 2113 1fd31b7837dfebfeaddffb4457c33f9d "pdflatex"
   "Relatorio_ITP.bbl" 1584550946 5993 126d160bfa9ec791768c7d4ed94fba9b "biber Relatorio_ITP"
-  "Relatorio_ITP.run.xml" 1585597271 2507 00bfd029d16443bca1de8b08654e2749 "pdflatex"
-  "Relatorio_ITP.tex" 1585597265 2730 c66bb8bcde70aa6c11a0a329c0a44dfd ""
-  "Relatorio_ITP.toc" 1585597271 618 ba8c4fccea46a89709e3368c413be444 "pdflatex"
-  "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" 1585597265 2730 c66bb8bcde70aa6c11a0a329c0a44dfd ""
-  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.aux" 1585597271 1950 532597645576ff8271416da02ca9c215 ""
+  "Relatorio_ITP.run.xml" 1585779625 2507 00bfd029d16443bca1de8b08654e2749 "pdflatex"
+  "Relatorio_ITP.tex" 1585779613 2779 9fed93158c9c72d506ebffdcb2e719cb ""
+  "Relatorio_ITP.toc" 1585779625 723 dc68efeb408db2ff7372ede8484a6afd "pdflatex"
+  "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" 1585779613 2779 9fed93158c9c72d506ebffdcb2e719cb ""
+  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.aux" 1585779625 2113 1fd31b7837dfebfeaddffb4457c33f9d ""
   (generated)
   "Relatorio_ITP.log"
-  "Relatorio_ITP.pdf"
-  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.log"
   "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf"
+  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.log"
+  "Relatorio_ITP.toc"
+  "Relatorio_ITP.bcf"
+  "Relatorio_ITP.pdf"
   "Relatorio_ITP.aux"
   "Relatorio_ITP.run.xml"
-  "Relatorio_ITP.bcf"
-  "Relatorio_ITP.toc"

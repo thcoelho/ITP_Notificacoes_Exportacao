@@ -9,4 +9,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Obtenção de estimadores}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Dados e fontes}{2}%
+\contentsline {subsection}{\numberline {2.3}Variáveis do modelo}{3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Dados e fontes}{3}%
