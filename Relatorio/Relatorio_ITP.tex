@@ -41,6 +41,21 @@ Dada a característica de haver grandes quantidades de fluxos de troca com valor
 
 \subsection{Variáveis do modelo}
 
+\begin{equation}
+    \ln X_{JT} = \ln YB_t + \ln YE_{JT} + Dist_J + \ln TRF_{JT} 
+\end{equation}
+
+Onde:
+
+\begin{itemize}
+    \item $X_{JT}$ = Valor de exportação do Brasil para o país $J$ no período $T$;
+    \item $YB_T$ = Renda do Brasil no período $t$;
+    \item $YE_{JT}$ = Renda do país J no período $t$;
+    \item $Dist_J$ = Distância entre o Brasil e o país $J$;
+    \item $TRF_{JT}$ = Valor da tarifa efetivamente aplicada pelo país $J$ ao Brasil no período $T$.
+\end{itemize}
+
+Obs: Todas aquelas variáveis que não são dummies estão sendo transformadas por meio de logaritmo natural, assim como pede a especificação de \cite{Log_Of_Gravity}.
 
 
 \section{Dados e fontes}
@@ -51,7 +66,8 @@ Bases de dados utilizadas:
     \item Notificações: https://www.epingalert.org/en;
     \item Valor de exportações: https://comtrade.un.org/;
     \item PIB : Banco mundial, \cite{WB};
-    \item Distanciamento: \cite{CEPII}.
+    \item Distanciamento: \cite{CEPII};
+    \item Tarifas: WITS
 \end{enumerate}
 
 \printbibliography
