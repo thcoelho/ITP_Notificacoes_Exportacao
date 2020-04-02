@@ -1,0 +1,291 @@
+Variable                                   all            
+                        Country_fe_Albania        1.624***
+                                                   (0.590)
+            Country_fe_Antigua and Barbuda        3.102***
+                                                   (0.390)
+                      Country_fe_Argentina        4.198***
+                                                   (0.334)
+                        Country_fe_Armenia           0.172
+                                                   (0.726)
+                      Country_fe_Australia          -0.728
+                                                   (0.793)
+                        Country_fe_Bahrain           0.358
+                                                   (0.705)
+                     Country_fe_Bangladesh          -1.073
+                                                   (0.955)
+                       Country_fe_Barbados        1.381***
+                                                   (0.488)
+                         Country_fe_Belize        1.690***
+                                                   (0.398)
+                          Country_fe_Benin        4.400***
+                                                   (0.400)
+                        Country_fe_Bolivia        1.961***
+                                                   (0.343)
+                       Country_fe_Botswana       -2.904***
+                                                   (0.655)
+                       Country_fe_Bulgaria           0.146
+                                                   (0.908)
+                   Country_fe_Burkina Faso           0.012
+                                                   (0.534)
+                        Country_fe_Burundi       -3.002***
+                                                   (1.063)
+                       Country_fe_Cambodia       -8.623***
+                                                   (1.031)
+                       Country_fe_Cameroon        2.017***
+                                                   (0.473)
+                         Country_fe_Canada        3.823***
+                                                   (0.499)
+       Country_fe_Central African Republic          -0.453
+                                                   (0.557)
+                           Country_fe_Chad           0.664
+                                                   (0.665)
+                          Country_fe_Chile        8.077***
+                                                   (0.316)
+                          Country_fe_China           0.677
+                                                   (1.089)
+                       Country_fe_Colombia        1.436***
+                                                   (0.383)
+                     Country_fe_Costa Rica        3.496***
+                                                   (0.450)
+                  Country_fe_Cote d'Ivoire        3.394***
+                                                   (0.385)
+                        Country_fe_Croatia        2.063***
+                                                   (0.597)
+                           Country_fe_Cuba        5.609***
+                                                   (0.384)
+                         Country_fe_Cyprus           0.933
+                                                   (0.723)
+                 Country_fe_Czech Republic          1.329*
+                                                   (0.682)
+                       Country_fe_Dominica        2.656***
+                                                   (0.440)
+             Country_fe_Dominican Republic        4.863***
+                                                   (0.443)
+                        Country_fe_Ecuador        4.569***
+                                                   (0.340)
+               Country_fe_Egypt, Arab Rep.        4.110***
+                                                   (0.612)
+                    Country_fe_El Salvador        2.142***
+                                                   (0.616)
+                        Country_fe_Estonia       -1.412***
+                                                   (0.713)
+                           Country_fe_Fiji       -4.778***
+                                                   (0.996)
+                          Country_fe_Gabon        4.125***
+                                                   (0.500)
+                    Country_fe_Gambia, The        3.684***
+                                                   (0.715)
+                        Country_fe_Georgia           0.543
+                                                   (0.720)
+                          Country_fe_Ghana        4.376***
+                                                   (0.494)
+                        Country_fe_Grenada        4.942***
+                                                   (0.418)
+                      Country_fe_Guatemala        3.264***
+                                                   (0.489)
+                         Country_fe_Guinea        2.362***
+                  Country_fe_Guinea-Bissau           0.453
+                                                   (0.552)
+                                                   (0.439)
+                         Country_fe_Guyana       -2.276***
+                                                   (0.360)
+                          Country_fe_Haiti        4.344***
+                                                   (0.431)
+                       Country_fe_Honduras        2.250***
+                                                   (0.440)
+                        Country_fe_Hungary           0.440
+                                                   (0.711)
+                        Country_fe_Iceland          -0.475
+                                                   (0.600)
+                          Country_fe_India           0.135
+                                                   (0.863)
+                      Country_fe_Indonesia          -1.301
+                                                   (0.977)
+                         Country_fe_Israel        1.950***
+                                                   (0.634)
+                        Country_fe_Jamaica        1.900***
+                                                   (0.623)
+                          Country_fe_Japan          -1.474
+                                                   (1.141)
+                         Country_fe_Jordan        2.025***
+                                                   (0.638)
+                     Country_fe_Kazakhstan       -3.657***
+                                                   (0.996)
+                          Country_fe_Kenya           0.528
+                                                   (0.589)
+                    Country_fe_Korea, Rep.         -2.004*
+                                                   (1.071)
+                         Country_fe_Kuwait        2.079***
+                                                   (0.746)
+                Country_fe_Kyrgyz Republic       -4.558***
+                                                   (0.896)
+                        Country_fe_Lao PDR       -7.083***
+                                                   (1.068)
+                         Country_fe_Latvia       -2.718***
+                                                   (0.717)
+                      Country_fe_Lithuania          -0.526
+                                                   (0.752)
+                     Country_fe_Madagascar           0.470
+                                                   (0.638)
+                         Country_fe_Malawi       -2.038***
+                                                   (0.681)
+                       Country_fe_Malaysia          -0.973
+                                                   (0.973)
+                       Country_fe_Maldives          -1.329
+                                                   (0.812)
+                           Country_fe_Mali        3.180***
+                                                   (0.494)
+                          Country_fe_Malta           0.378
+                                                   (0.821)
+                     Country_fe_Mauritania        3.534***
+                                                   (0.439)
+                      Country_fe_Mauritius          -0.544
+                                                   (0.633)
+                         Country_fe_Mexico        3.906***
+                                                   (0.462)
+                        Country_fe_Moldova          -0.618
+                                                   (0.678)
+                       Country_fe_Mongolia       -7.375***
+                                                   (0.987)
+                        Country_fe_Morocco        4.845***
+                                                   (0.498)
+                     Country_fe_Mozambique        1.930***
+                                                   (0.491)
+                        Country_fe_Myanmar       -6.002***
+                                                   (0.999)
+                        Country_fe_Namibia        2.499***
+                                                   (0.485)
+                          Country_fe_Nepal       -1.961***
+                                                   (0.958)
+                    Country_fe_New Zealand          -0.250
+                                                   (0.659)
+                      Country_fe_Nicaragua        3.894***
+                                                   (0.477)
+                          Country_fe_Niger        1.196***
+                                                   (0.605)
+                        Country_fe_Nigeria        6.218***
+                                                   (0.769)
+                         Country_fe_Norway        2.754***
+                                                   (0.624)
+                           Country_fe_Oman           1.124
+                                                   (0.781)
+                       Country_fe_Pakistan         -1.536*
+                                                   (0.896)
+                         Country_fe_Panama        3.704***
+                                                   (0.409)
+               Country_fe_Papua New Guinea       -6.261***
+                                                   (0.986)
+                       Country_fe_Paraguay        3.325***
+                                                   (0.341)
+                           Country_fe_Peru        1.757***
+                                                   (0.314)
+                    Country_fe_Philippines       -3.658***
+                                                   (1.081)
+                         Country_fe_Poland           0.411
+                                                   (0.689)
+                          Country_fe_Qatar          1.295*
+                                                   (0.725)
+                         Country_fe_Rwanda          -0.198
+                                                   (0.850)
+                          Country_fe_Samoa       -6.462***
+                                                   (0.817)
+                   Country_fe_Saudi Arabia        4.114***
+                                                   (0.689)
+                        Country_fe_Senegal        5.581***
+                                                   (0.347)
+                     Country_fe_Seychelles          -0.693
+                                                   (0.846)
+                   Country_fe_Sierra Leone        4.407***
+                                                   (0.653)
+                      Country_fe_Singapore          -0.875
+                                                   (0.952)
+                Country_fe_Slovak Republic          -0.101
+                                                   (0.667)
+                       Country_fe_Slovenia           1.220
+                                                   (0.867)
+                   Country_fe_South Africa        5.371***
+                                                   (0.395)
+                      Country_fe_Sri Lanka       -4.072***
+                                                   (1.026)
+            Country_fe_St. Kitts and Nevis        1.460***
+                                                   (0.491)
+                      Country_fe_St. Lucia        1.206***
+                                                   (0.461)
+ Country_fe_St. Vincent and the Grenadines        1.872***
+                                                   (0.570)
+                    Country_fe_Switzerland        2.945***
+                                                   (0.575)
+                       Country_fe_Tanzania           0.681
+                                                   (0.694)
+                       Country_fe_Thailand          -0.520
+                                                   (0.979)
+                           Country_fe_Togo        0.836***
+                                                   (0.399)
+                          Country_fe_Tonga       -5.617***
+                                                   (0.846)
+            Country_fe_Trinidad and Tobago        4.523***
+                                                   (0.306)
+                        Country_fe_Tunisia        3.112***
+                                                   (0.535)
+                         Country_fe_Turkey        2.315***
+                                                   (0.633)
+                         Country_fe_Uganda          1.412*
+                                                   (0.733)
+                        Country_fe_Ukraine        1.523***
+                                                   (0.738)
+           Country_fe_United Arab Emirates        2.307***
+                                                   (0.794)
+                  Country_fe_United States        4.875***
+                                                   (1.217)
+                            PIB_(1000_US$)           0.000
+                                                   (0.000)
+                          Weighted Average           0.002
+                                                   (0.003)
+                              Year_fe_1996       -1.517***
+                                                   (0.434)
+                              Year_fe_1997       -1.297***
+                                                   (0.412)
+                              Year_fe_1998       -1.039***
+                                                   (0.338)
+                              Year_fe_1999       -1.098***
+                                                   (0.337)
+                              Year_fe_2000       -1.140***
+                                                   (0.297)
+                              Year_fe_2001       -1.534***
+                                                   (0.360)
+                              Year_fe_2002       -1.308***
+                                                   (0.363)
+                              Year_fe_2003       -1.054***
+                                                   (0.388)
+                              Year_fe_2004       -0.748***
+                                                   (0.360)
+                              Year_fe_2005         -0.668*
+                                                   (0.362)
+                              Year_fe_2006         -0.706*
+                                                   (0.383)
+                              Year_fe_2007          -0.476
+                                                   (0.367)
+                              Year_fe_2008          -0.101
+                                                   (0.398)
+                              Year_fe_2009          -0.155
+                                                   (0.420)
+                              Year_fe_2010          -0.078
+                                                   (0.414)
+                              Year_fe_2011           0.156
+                                                   (0.420)
+                              Year_fe_2012           0.231
+                                                   (0.455)
+                              Year_fe_2013           0.342
+                                                   (0.490)
+                              Year_fe_2014           0.188
+                                                   (0.497)
+                              Year_fe_2015           0.156
+                                                   (0.486)
+                                    contig        4.494***
+                                                   (0.353)
+                                      dist        0.001***
+                                                   (0.000)
+                                       AIC  1115376646.937
+                                       BIC  1115190329.392
+                                Likelihood  -557688181.468
+                                      Obs.           11246
