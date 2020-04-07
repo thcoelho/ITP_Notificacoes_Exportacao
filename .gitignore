@@ -13,5 +13,6 @@ Projeto_ITP.pdf
 *.log
 *.fls*.fdb_latexmk
 *.json
+*.doc
 .vscode/
 .ipynb_checkpoints/
