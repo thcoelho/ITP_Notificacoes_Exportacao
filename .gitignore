@@ -16,3 +16,6 @@ Projeto_ITP.pdf
 *.doc
 .vscode/
 .ipynb_checkpoints/
+*.jar
+Modelo/Datasets_Completos/
+Notificações/EpingNotifications.csv
