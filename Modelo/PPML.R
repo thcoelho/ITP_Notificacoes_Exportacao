@@ -1,13 +1,26 @@
 library(gravity)
+library(broom)
+library(tidyr)
+library(xtable)
+library(dplyr)
 
-df = read.csv("Modelo/Modelo_Completo/Teste_objetivos.csv")
+setwd("C:/Users/Thiago/Desktop/Google Drive/ITP/Modelo")
 
-modelo = gravity::ppml(
-    dependent_variable = "Imports.Value.in.1000.USD",
+cepii <- read.csv("Datasets_Completos/CEPII_Notif.csv")
+
+cepii <- cepii %>% 
+    tidyr::fill(Trade.Value..US..) %>% 
+    filter(Year < 2016) %>% 
+    mutate(ln_gdp_o= log(gdp_o), ln_gdp_d = log(gdp_d),
+           ln_trade = log(Trade.Value..US..),
+           ln_dist = log(distw))
+
+
+
+modelo_cepii = gravity::ppml(
+    dependent_variable = "ln_trade",
     distance = "distw",
-    additional_regressors = c("PIB_.1000_US..",
-                            "contig", "colony",
-                            "Weighted.Average","Animal.health",
+    additional_regressors = c("Animal.health",
                             "Consumer.information",
                             "Cost.saving",
                             "Food.safety",
@@ -24,9 +37,25 @@ modelo = gravity::ppml(
                             "Protection.of.Human.health.or.Safety",
                             "Protection.of.animal.or.plant.life.or.health",
                             "Protection.of.the.environment",
-                            "Quality.requirements"),
-    code_origin = "Exp",
-    code_destination = "Country",
-    data = df
+                            "Quality.requirements",
+                            "ln_gdp_d",                                                   
+                            "ln_gdp_o",                                                   
+                            "comrelig",                                                
+                            "gatt_d",                                                  
+                            "gatt_o",                                                   
+                            "eu_d"),
+    code_origin = "Origin",
+    code_destination = "Country.Code",
+    data = cepii
+)
 
+resultados_cepii <- tidy(modelo_cepii)
+
+# Dataset criado
+meu_dataset <- read.csv("Modelo_Completo/Dados_modelo.csv")
+meu_dataset <- meu_dataset %>% 
+    mutate(ln_Tarif = log(1 + Weighted.Average))
+
+modelo <- ppml(dependent_variable = 
+    
 )
