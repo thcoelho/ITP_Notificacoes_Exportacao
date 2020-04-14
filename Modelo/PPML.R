@@ -42,24 +42,20 @@ modelo_cepii = gravity::ppml(
                             "Protection.of.animal.or.plant.life.or.health",
                             "Protection.of.the.environment",
                             "Quality.requirements",
-                            "ln_gdp_d",                                                   
-                            "ln_gdp_o",                                                   
-                            "comrelig",                                                
-                            "gatt_d",                                                  
-                            "gatt_o",                                                   
+                            "ln_gdp_d",
+                            "ln_gdp_o",
+                            "comrelig",
+                            "gatt_d",
+                            "gatt_o",
                             "eu_d"),
     code_origin = "Origin",
     code_destination = "Country.Code",
     data = cepii
 )
 
-print(xtable(modelo_cepii, booktabs=TRUE))
+print(xtable(modelo_cepii, booktabs = TRUE))
 
 # Dataset criado
 meu_dataset <- read.csv("Modelo_Completo/Dados_modelo.csv")
 meu_dataset <- meu_dataset %>% 
     mutate(ln_Tarif = log(1 + Weighted.Average))
-
-modelo <- ppml(dependent_variable = 
-    
-)
