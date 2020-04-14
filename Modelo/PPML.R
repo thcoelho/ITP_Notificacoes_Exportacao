@@ -17,6 +17,8 @@ cepii <- cepii %>%
         ln_dist = log(distw)
     ) 
 
+cepii$Origin <- replace_na(cepii$Origin, "BRA")
+
 write.csv(cepii, "Datasets_Completos/CEPII_Notif.csv")
 
 modelo_cepii = gravity::ppml(
@@ -45,7 +47,7 @@ modelo_cepii = gravity::ppml(
                             "comrelig",                                                
                             "gatt_d",                                                  
                             "gatt_o",                                                   
-                            "eu_d",),
+                            "eu_d"),
     code_origin = "Origin",
     code_destination = "Country.Code",
     data = cepii
