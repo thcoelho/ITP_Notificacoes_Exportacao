@@ -45,14 +45,13 @@ modelo_cepii = gravity::ppml(
                             "comrelig",                                                
                             "gatt_d",                                                  
                             "gatt_o",                                                   
-                            "eu_d",
-                            "ln_dist"),
+                            "eu_d",),
     code_origin = "Origin",
     code_destination = "Country.Code",
     data = cepii
 )
 
-print(xtable(modelo_cepii, booktabs=T))
+print(xtable(modelo_cepii, booktabs=TRUE))
 
 # Dataset criado
 meu_dataset <- read.csv("Modelo_Completo/Dados_modelo.csv")
