@@ -8,14 +8,16 @@ setwd("C:/Users/Thiago/Desktop/Google Drive/ITP/Modelo")
 
 cepii <- read.csv("Datasets_Completos/CEPII_Notif.csv")
 
-cepii <- cepii %>% 
-    tidyr::fill(Trade.Value..US..) %>% 
-    filter(Year < 2016) %>% 
-    mutate(ln_gdp_o= log(gdp_o), ln_gdp_d = log(gdp_d),
-           ln_trade = log(Trade.Value..US..),
-           ln_dist = log(distw))
+cepii <- cepii %>%
+    tidyr::fill(Trade.Value..US..) %>%
+    filter(Year < 2016) %>%
+    mutate(
+        ln_gdp_o = log(gdp_o), ln_gdp_d = log(gdp_d),
+        ln_trade = log(Trade.Value..US..),
+        ln_dist = log(distw)
+    ) 
 
-
+write.csv(cepii, "Datasets_Completos/CEPII_Notif.csv")
 
 modelo_cepii = gravity::ppml(
     dependent_variable = "ln_trade",
@@ -43,13 +45,14 @@ modelo_cepii = gravity::ppml(
                             "comrelig",                                                
                             "gatt_d",                                                  
                             "gatt_o",                                                   
-                            "eu_d"),
+                            "eu_d",
+                            "ln_dist"),
     code_origin = "Origin",
     code_destination = "Country.Code",
     data = cepii
 )
 
-resultados_cepii <- tidy(modelo_cepii)
+print(xtable(modelo_cepii, booktabs=T))
 
 # Dataset criado
 meu_dataset <- read.csv("Modelo_Completo/Dados_modelo.csv")
