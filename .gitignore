@@ -19,3 +19,5 @@ Projeto_ITP.pdf
 *.jar
 Modelo/Datasets_Completos/
 Notificações/EpingNotifications.csv
+$tempFile
+.Rhistory
