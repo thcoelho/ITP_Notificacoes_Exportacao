@@ -1,10 +1,13 @@
 library(gravity)
 library(broom)
 library(dplyr)
+library(tidyr)
 
 df <- read.csv("Modelo_Completo/Modelo_Proprio.csv")
 
 df$Origin <- "BRA"
+
+
 
 modelo <- ppml(
   dependent_variable = "ln_Export",
@@ -33,6 +36,7 @@ modelo <- ppml(
   ),
   code_origin = "Origin",
   code_destination = "Country.Code",
+  
   data = df
 )
 
