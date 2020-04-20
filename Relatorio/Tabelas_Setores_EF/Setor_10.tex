@@ -1,87 +1,25 @@
 \begin{center}
-\begin{tabular}{lclc}
-\toprule
-\textbf{Dep. Variable:}                                            &   ln\_trade   & \textbf{  No. Iterations:    } &     4       \\
-\textbf{Model:}                                                    &      GLM      & \textbf{  Df Residuals:      } &    640      \\
-\textbf{Model Family:}                                             &    Poisson    & \textbf{  Df Model:          } &     69      \\
-\textbf{Link Function:}                                            &      log      & \textbf{  Scale:             } &    1.0000   \\
-\textbf{Method:}                                                   &      IRLS     & \textbf{  Log-Likelihood:    } &   -1715.2   \\
-\textbf{Covariance Type:}                                          &      HC1      & \textbf{  Deviance:          } &    320.52   \\
-\bottomrule
-\end{tabular}
 \begin{tabular}{lcccccc}
-                                                                   & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+                                                                   & \textbf{Coeficiente} & \textbf{Erro padrão} & \textbf{P$> |$t$|$}\\
 \midrule
-\textbf{Animal.health}                                             &      -0.0011  &        0.003     &    -0.335  &         0.738        &       -0.008    &        0.006     \\
-\textbf{Consumer.information}                                      &       0.3054  &        0.105     &     2.900  &         0.004        &        0.099    &        0.512     \\
-\textbf{Food.safety}                                               &      -0.0054  &        0.004     &    -1.311  &         0.190        &       -0.014    &        0.003     \\
-\textbf{Lower.barriers.to.trade}                                   &      -0.0167  &        0.038     &    -0.441  &         0.659        &       -0.091    &        0.058     \\
-\textbf{Plant.protection}                                          &       0.0075  &        0.007     &     1.040  &         0.299        &       -0.007    &        0.022     \\
-\textbf{Prevention.of.deceptive.practices.and.consumer.protection} &       0.1521  &        0.047     &     3.269  &         0.001        &        0.061    &        0.243     \\
-\textbf{Protect.humans.from.animal.plant.pest.or.disease}          &       0.0049  &        0.006     &     0.772  &         0.440        &       -0.008    &        0.017     \\
-\textbf{Protect.territory.from.other.damage.from.pests}            &      -0.0094  &        0.016     &    -0.585  &         0.558        &       -0.041    &        0.022     \\
-\textbf{Protection.of.Human.health.or.Safety}                      &      -0.0978  &        0.030     &    -3.222  &         0.001        &       -0.157    &       -0.038     \\
-\textbf{Protection.of.animal.or.plant.life.or.health}              &      -0.2954  &        0.058     &    -5.062  &         0.000        &       -0.410    &       -0.181     \\
-\textbf{Quality.requirements}                                      &      -0.0069  &        0.033     &    -0.209  &         0.834        &       -0.072    &        0.058     \\
-\textbf{ln\_gdp\_d}                                                &       0.0023  &        0.091     &     0.025  &         0.980        &       -0.176    &        0.180     \\
-\textbf{ln\_gdp\_o}                                                &      75.7156  &       21.900     &     3.457  &         0.001        &       32.710    &      118.721     \\
-\textbf{comrelig}                                                  &      65.6997  &       23.215     &     2.830  &         0.005        &       20.114    &      111.286     \\
-\textbf{gatt\_d}                                                   &   -2280.8208  &      639.428     &    -3.567  &         0.000        &    -3536.450    &    -1025.191     \\
-\textbf{ln\_dist}                                                  &      12.4213  &        4.718     &     2.633  &         0.008        &        3.157    &       21.686     \\
-\textbf{contig}                                                    &       0.0425  &        0.027     &     1.556  &         0.120        &       -0.011    &        0.096     \\
-\textbf{ln\_Tariff}                                                &       0.0372  &        0.036     &     1.020  &         0.308        &       -0.034    &        0.109     \\
-\textbf{Year\_fe\_2007}                                            &      37.5853  &       10.888     &     3.452  &         0.001        &       16.204    &       58.967     \\
-\textbf{Year\_fe\_2008}                                            &      23.2029  &        6.720     &     3.453  &         0.001        &       10.006    &       36.400     \\
-\textbf{Year\_fe\_2009}                                            &      24.7513  &        7.164     &     3.455  &         0.001        &       10.683    &       38.819     \\
-\textbf{Year\_fe\_2010}                                            &       3.6679  &        1.046     &     3.507  &         0.000        &        1.614    &        5.721     \\
-\textbf{Year\_fe\_2011}                                            &      -7.3766  &        2.121     &    -3.478  &         0.001        &      -11.541    &       -3.212     \\
-\textbf{Country.Code\_fe\_ALB}                                     &      16.3005  &        5.198     &     3.136  &         0.002        &        6.093    &       26.508     \\
-\textbf{Country.Code\_fe\_ARE}                                     &      13.0944  &        4.293     &     3.050  &         0.002        &        4.664    &       21.525     \\
-\textbf{Country.Code\_fe\_ARG}                                     &     -19.5359  &        6.731     &    -2.902  &         0.004        &      -32.754    &       -6.318     \\
-\textbf{Country.Code\_fe\_ARM}                                     &      14.2083  &        4.339     &     3.274  &         0.001        &        5.687    &       22.729     \\
-\textbf{Country.Code\_fe\_AUS}                                     &      -6.4053  &        2.556     &    -2.506  &         0.012        &      -11.425    &       -1.386     \\
-\textbf{Country.Code\_fe\_BLZ}                                     &     -17.3217  &        6.800     &    -2.547  &         0.011        &      -30.674    &       -3.969     \\
-\textbf{Country.Code\_fe\_CAN}                                     &     -10.0716  &        3.658     &    -2.753  &         0.006        &      -17.255    &       -2.888     \\
-\textbf{Country.Code\_fe\_CHL}                                     &     -17.8938  &        6.219     &    -2.877  &         0.004        &      -30.106    &       -5.682     \\
-\textbf{Country.Code\_fe\_CHN}                                     &       8.7787  &        2.875     &     3.054  &         0.002        &        3.134    &       14.423     \\
-\textbf{Country.Code\_fe\_COL}                                     &     -29.7929  &       10.545     &    -2.825  &         0.005        &      -50.499    &       -9.086     \\
-\textbf{Country.Code\_fe\_CRI}                                     &     -29.6210  &       10.576     &    -2.801  &         0.005        &      -50.388    &       -8.854     \\
-\textbf{Country.Code\_fe\_DOM}                                     &     -31.5801  &       11.383     &    -2.774  &         0.006        &      -53.932    &       -9.228     \\
-\textbf{Country.Code\_fe\_ECU}                                     &     -29.8192  &       10.592     &    -2.815  &         0.005        &      -50.619    &       -9.020     \\
-\textbf{Country.Code\_fe\_EEC}                                     &     -29.6587  &       10.590     &    -2.801  &         0.005        &      -50.455    &       -8.863     \\
-\textbf{Country.Code\_fe\_EGY}                                     &      15.5494  &        5.201     &     2.989  &         0.003        &        5.336    &       25.763     \\
-\textbf{Country.Code\_fe\_GTM}                                     &     -33.2218  &       11.971     &    -2.775  &         0.006        &      -56.729    &       -9.715     \\
-\textbf{Country.Code\_fe\_HKG}                                     &       3.0768  &        0.812     &     3.789  &         0.000        &        1.482    &        4.671     \\
-\textbf{Country.Code\_fe\_HND}                                     &     -33.3390  &       12.212     &    -2.730  &         0.006        &      -57.319    &       -9.359     \\
-\textbf{Country.Code\_fe\_IDN}                                     &       7.9140  &        2.438     &     3.246  &         0.001        &        3.126    &       12.702     \\
-\textbf{Country.Code\_fe\_IND}                                     &      10.5402  &        3.475     &     3.033  &         0.002        &        3.717    &       17.363     \\
-\textbf{Country.Code\_fe\_ISR}                                     &      14.6195  &        4.871     &     3.001  &         0.003        &        5.054    &       24.185     \\
-\textbf{Country.Code\_fe\_JOR}                                     &      14.0876  &        4.487     &     3.140  &         0.002        &        5.277    &       22.898     \\
-\textbf{Country.Code\_fe\_JPN}                                     &       7.9170  &        2.525     &     3.136  &         0.002        &        2.959    &       12.875     \\
-\textbf{Country.Code\_fe\_KEN}                                     &       0.7914  &        0.210     &     3.763  &         0.000        &        0.378    &        1.204     \\
-\textbf{Country.Code\_fe\_KOR}                                     &       5.7308  &        1.673     &     3.425  &         0.001        &        2.445    &        9.016     \\
-\textbf{Country.Code\_fe\_KWT}                                     &      12.7751  &        4.092     &     3.122  &         0.002        &        4.741    &       20.810     \\
-\textbf{Country.Code\_fe\_MAC}                                     &       3.3310  &        0.454     &     7.332  &         0.000        &        2.439    &        4.223     \\
-\textbf{Country.Code\_fe\_MAR}                                     &      19.6647  &        6.656     &     2.955  &         0.003        &        6.595    &       32.734     \\
-\textbf{Country.Code\_fe\_MEX}                                     &     -35.7613  &       12.745     &    -2.806  &         0.005        &      -60.789    &      -10.734     \\
-\textbf{Country.Code\_fe\_MKD}                                     &      15.7796  &        4.998     &     3.157  &         0.002        &        5.965    &       25.594     \\
-\textbf{Country.Code\_fe\_MLI}                                     &      22.6791  &        7.573     &     2.995  &         0.003        &        7.807    &       37.551     \\
-\textbf{Country.Code\_fe\_NIC}                                     &     -32.1547  &       11.814     &    -2.722  &         0.006        &      -55.354    &       -8.955     \\
-\textbf{Country.Code\_fe\_NOR}                                     &      12.8866  &        4.246     &     3.035  &         0.002        &        4.548    &       21.225     \\
-\textbf{Country.Code\_fe\_NPL}                                     &      10.5654  &        3.084     &     3.426  &         0.001        &        4.510    &       16.620     \\
-\textbf{Country.Code\_fe\_NZL}                                     &       0.9809  &        0.182     &     5.393  &         0.000        &        0.624    &        1.338     \\
-\textbf{Country.Code\_fe\_OMN}                                     &      13.1202  &        4.130     &     3.177  &         0.001        &        5.010    &       21.230     \\
-\textbf{Country.Code\_fe\_PER}                                     &     -26.5694  &        9.467     &    -2.806  &         0.005        &      -45.160    &       -7.978     \\
-\textbf{Country.Code\_fe\_PHL}                                     &     -40.4106  &       14.869     &    -2.718  &         0.007        &      -69.608    &      -11.214     \\
-\textbf{Country.Code\_fe\_PRY}                                     &     -17.2245  &        6.090     &    -2.828  &         0.005        &      -29.183    &       -5.266     \\
-\textbf{Country.Code\_fe\_QAT}                                     &      13.1441  &        4.187     &     3.140  &         0.002        &        4.923    &       21.365     \\
-\textbf{Country.Code\_fe\_RUS}                                     &      12.5044  &        4.216     &     2.966  &         0.003        &        4.226    &       20.783     \\
-\textbf{Country.Code\_fe\_SAU}                                     &      14.8020  &        4.897     &     3.023  &         0.003        &        5.187    &       24.417     \\
-\textbf{Country.Code\_fe\_SGP}                                     &       7.0480  &        1.947     &     3.620  &         0.000        &        3.225    &       10.871     \\
-\textbf{Country.Code\_fe\_SLV}                                     &     -33.6315  &       12.305     &    -2.733  &         0.006        &      -57.795    &       -9.468     \\
-\textbf{Country.Code\_fe\_SWZ}                                     &      11.5857  &        3.438     &     3.369  &         0.001        &        4.834    &       18.338     \\
-\textbf{Country.Code\_fe\_THA}                                     &       9.1028  &        2.819     &     3.229  &         0.001        &        3.568    &       14.638     \\
-\textbf{Country.Code\_fe\_UKR}                                     &      14.2183  &        4.793     &     2.967  &         0.003        &        4.807    &       23.630     \\
+\textbf{Animal.health}                                             &      -0.0011  &        0.003     &        0.738\\
+\textbf{Consumer.information}                                      &       0.3054  &        0.105     &        0.004\\
+\textbf{Food.safety}                                               &      -0.0054  &        0.004     &        0.190\\
+\textbf{Lower.barriers.to.trade}                                   &      -0.0167  &        0.038     &        0.659\\
+\textbf{Plant.protection}                                          &       0.0075  &        0.007     &        0.299\\
+\textbf{Prevention.of.deceptive.practices.and.consumer.protection} &       0.1521  &        0.047     &        0.001\\
+\textbf{Protect.humans.from.animal.plant.pest.or.disease}          &       0.0049  &        0.006     &        0.440\\
+\textbf{Protect.territory.from.other.damage.from.pests}            &      -0.0094  &        0.016     &        0.558\\
+\textbf{Protection.of.Human.health.or.Safety}                      &      -0.0978  &        0.030     &        0.001\\
+\textbf{Protection.of.animal.or.plant.life.or.health}              &      -0.2954  &        0.058     &        0.000\\
+\textbf{Quality.requirements}                                      &      -0.0069  &        0.033     &        0.834\\
+\textbf{ln\_gdp\_d}                                                &       0.0023  &        0.091     &        0.980\\
+\textbf{ln\_gdp\_o}                                                &      75.7156  &       21.900     &        0.001\\
+\textbf{comrelig}                                                  &      65.6997  &       23.215     &        0.005\\
+\textbf{gatt\_d}                                                   &   -2280.8208  &      639.428     &        0.000\\
+\textbf{ln\_dist}                                                  &      12.4213  &        4.718     &        0.008\\
+\textbf{contig}                                                    &       0.0425  &        0.027     &        0.120\\
+\textbf{ln\_Tariff}                                                &       0.0372  &        0.036     &        0.308\\
 \bottomrule
 \end{tabular}
 %\caption{Generalized Linear Model Regression Results}
