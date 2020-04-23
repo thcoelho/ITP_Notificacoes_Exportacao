@@ -5,15 +5,14 @@ library(xtable)
 library(dplyr)
 library(purrr)
 
-setwd("C:/Users/Thiago/Desktop/Google Drive/ITP/Modelo")
+setwd("C:/Users/Thiago/Desktop/Google Drive/ITP/Modelo/Regressão/")
 
-cepii <- read.csv("Modelo_Completo/Dados_Cepii_Especificados.csv")
+cepii <- read.csv("../Modelo_Completo/Dados_Cepii_Especificados.csv")
 
 cepii <-cepii %>% 
     select(-1)
 
-PPML_REG <- function(df) {
-    ppml(
+ reg <- ppml(
         dependent_variable = "ln_trade",
         distance = "distw",
         additional_regressors = c(
@@ -45,16 +44,4 @@ PPML_REG <- function(df) {
             "contig"),
         code_origin = "Origin",
         code_destination = "Country.Code",
-        data = df)
-}
-
-
-commodities <- cepii %>% 
-    group_by(Commodity.Code) %>% 
-    nest() %>% 
-    arrange(Commodity.Code)
-
-modelos <-map(commodities$data, PPML_REG)
-
-resultados <- map(modelos, tidy)
-
+        data = cepii)

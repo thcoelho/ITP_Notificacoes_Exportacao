@@ -7,42 +7,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Modelos de gravidade}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Obtenção de estimadores}{3}%
+\contentsline {subsection}{\numberline {2.2}Estimador PPML}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Variáveis do modelo}{4}%
+\contentsline {subsection}{\numberline {2.3}Software}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Dados e fontes}{4}%
+\contentsline {subsection}{\numberline {2.4}Justificativa para duas estimações}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Resultados}{5}%
+\contentsline {subsection}{\numberline {2.5}Variáveis do modelo}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Regressão Com base de dados CEPII}{5}%
+\contentsline {subsection}{\numberline {2.6}Dados e fontes}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Setor 01 - Animais vivos}{5}%
+\contentsline {section}{\numberline {3}Resultados}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Setor 02 - Carnes e miudezas, comestíveis}{6}%
+\contentsline {subsection}{\numberline {3.1}Regressão com efeitos fixos e setores agregados}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Setor 03 - Peixes e crustáceos, moluscos e outros invertebrados aquáticos}{6}%
+\contentsline {subsection}{\numberline {3.2}Regressão sem efeitos fixos e resultados setor por setor}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.4}Setor 04 - Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos em outros capítulos}{7}%
+\contentsline {subsubsection}{\numberline {3.2.1}Setor 01 - Animais vivos}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.5}Setor 05 - Outros produtos de origem animal, não especificados nem compreendidos em outros capítulos}{7}%
+\contentsline {subsubsection}{\numberline {3.2.2}Setor 02 - Carnes e miudezas, comestíveis}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.6}Setor 06 - Plantas vivas e produtos de floricultura}{8}%
+\contentsline {subsubsection}{\numberline {3.2.3}Setor 03 - Peixes e crustáceos, moluscos e outros invertebrados aquáticos}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.7}Setor 07 - Produtos hortícolas, plantas, raízes e tubérculos, comestíveis}{8}%
+\contentsline {subsubsection}{\numberline {3.2.4}Setor 04 - Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos em outros capítulos}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.8}Setor 08 - Frutas; cascas de citrinos e de melões}{9}%
+\contentsline {subsubsection}{\numberline {3.2.5}Setor 05 - Outros produtos de origem animal, não especificados nem compreendidos em outros capítulos}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.9}Setor 09 - Café, chá, mate e especiarias}{9}%
+\contentsline {subsubsection}{\numberline {3.2.6}Setor 06 - Plantas vivas e produtos de floricultura}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.10}Setor 10 - Cereais}{10}%
+\contentsline {subsubsection}{\numberline {3.2.7}Setor 07 - Produtos hortícolas, plantas, raízes e tubérculos, comestíveis}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.11}Setor 11 - Produtos da indústria de moagem; malte; amidos e féculas; inulina; glúten de trigo}{11}%
+\contentsline {subsubsection}{\numberline {3.2.8}Setor 08 - Frutas; cascas de citrinos e de melões}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.12}Setor 12 - Sementes e frutos oleaginosos; grãos, sementes e frutos diversos; plantas industriais ou medicinais; palhas e forragens}{12}%
+\contentsline {subsubsection}{\numberline {3.2.9}Setor 09 - Café, chá, mate e especiarias}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.13}Setor 13 - Gomas, resinas e outros sucos e extractos vegetais}{13}%
+\contentsline {subsubsection}{\numberline {3.2.10}Setor 10 - Cereais}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.14}Setor 14 - Matérias para entrançar e outros produtos de origem vegetal, não especificados nem compreendidos noutros capítulos}{13}%
+\contentsline {subsubsection}{\numberline {3.2.11}Setor 11 - Produtos da indústria de moagem; malte; amidos e féculas; inulina; glúten de trigo}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.15}Setor 15 - Gorduras e óleos animais ou vegetais; produtos da sua dissociação; gorduras alimentares elaboradas; ceras de origem animal ou vegetal}{14}%
+\contentsline {subsubsection}{\numberline {3.2.12}Setor 12 - Sementes e frutos oleaginosos; grãos, sementes e frutos diversos; plantas industriais ou medicinais; palhas e forragens}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.13}Setor 13 - Gomas, resinas e outros sucos e extractos vegetais}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.14}Setor 14 - Matérias para entrançar e outros produtos de origem vegetal, não especificados nem compreendidos noutros capítulos}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.15}Setor 15 - Gorduras e óleos animais ou vegetais; produtos da sua dissociação; gorduras alimentares elaboradas; ceras de origem animal ou vegetal}{16}%

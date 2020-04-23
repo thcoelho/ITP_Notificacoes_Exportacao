@@ -3,7 +3,7 @@ library(broom)
 library(dplyr)
 library(tidyr)
 
-df <- read.csv("Modelo_Completo/Modelo_Proprio.csv")
+df <- read.csv("../Modelo_Completo/Modelo_Proprio.csv")
 
 df$Origin <- "BRA"
 
