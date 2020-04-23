@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Relatorio_ITP"] 1587399689 "Relatorio_ITP.bcf" "Relatorio_ITP.bbl" "Relatorio_ITP" 1587400137
+["biber Relatorio_ITP"] 1587399689 "Relatorio_ITP.bcf" "Relatorio_ITP.bbl" "Relatorio_ITP" 1587556470
   "Referencias.bib" 1584551032 9736 d140c1ed9a8f235a5ef31605ebf7a7e2 ""
   "Relatorio_ITP.bcf" 1587400137 106756 cb464ff0f06b4ab1794fa95e1648f0ce "pdflatex"
   (generated)
   "Relatorio_ITP.blg"
   "Relatorio_ITP.bbl"
-["pdflatex"] 1587400133 "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf" "Relatorio_ITP" 1587400137
+["pdflatex"] 1587400133 "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf" "Relatorio_ITP" 1587556470
   "C:/Users/Thiago/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1586787621 10017735 ed97bb0b1b2f6e4b941435a6123a4b3b ""
   "C:/Users/Thiago/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1586959517 1653775 887d9a52becc11e2822e0e41a9378ddc ""
   "C:/Users/Thiago/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -133,11 +133,11 @@
   "c:/Users/Thiago/Desktop/Google Drive/ITP/Relatorio/Relatorio_ITP.tex" 1587400131 4775 f8d9bfbf953b6984ce0d8436716631ac ""
   "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.aux" 1587400137 6057 08667d5c3160b90289c685fa74c24002 ""
   (generated)
-  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.log"
-  "Relatorio_ITP.toc"
-  "Relatorio_ITP.pdf"
-  "Relatorio_ITP.aux"
-  "Relatorio_ITP.bcf"
-  "Relatorio_ITP.log"
   "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.pdf"
   "Relatorio_ITP.run.xml"
+  "Relatorio_ITP.pdf"
+  "Relatorio_ITP.bcf"
+  "Relatorio_ITP.aux"
+  "Relatorio_ITP.toc"
+  "Relatorio_ITP.log"
+  "c:\Users\Thiago\Desktop\Google Drive\ITP\Relatorio/Relatorio_ITP.log"
