@@ -47,30 +47,32 @@ Na literatura utilizada para basear este estudo, sempre se recomenda utilizaçã
 
 \begin{equation}
     \ln X_{D} = 
-    % \ln GDP_{O} 
+    \ln GDP_{O} 
     + \ln GDP_{D} 
     + \ln dist 
     + \ln Tariff 
     + \sum_{i=1}^{n} P 
-    % + Eu_{D} 
+    + Eu_{D} 
     + contig 
-    % + gatt_o 
-    % + gatt_D
+    + comrelig
+    + gatt_o 
+    + gatt_D
 \end{equation}
 
 Onde:
 
 \begin{itemize}
     \item $X$ = Valor de exportação do Brasil para o país de destino no período;
-    % \item $GDP_{O}$ = Renda do Brasil no período;
+    \item $GDP_{O}$ = Renda do Brasil no período;
     \item $GDP_{D}$ = Renda do país de destino no período;
     \item $dist$ = Distância em Quilômetros  do Brasil para o país de destino;
     \item $Tariff$ = Média ponderada das tarifas efetivamente aplicadas pelo país de destino ao Brasil no período;
     \item $\sum_{i=1}^{n} P$ = Conjunto de variáveis que indicam a quantidade de notificações emitidas por cada país e objetivo;
-    % \item $Eu_{D}$ = Dummy que indica se o país de destino faz parte da União Europeia.
+    \item $Eu_{D}$ = Dummy que indica se o país de destino faz parte da União Europeia.
     \item $contig$ = Dummy que indica se o Brasil possui fronteiras em comum com o país de destino;
-    % \item $gatt_O$ = Se o país (origem) é membro da Organização mundial do comércio;
-    % \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
+    \item $comrelig$ = Dummy que indica se os países possuem religiões difundidas em comum;
+    \item $gatt_O$ = Se o país (origem) é membro da Organização mundial do comércio;
+    \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
 \end{itemize}
 
 Obs: O período utilizado na análise é anual.
@@ -94,7 +96,23 @@ Bases de dados utilizadas:
 
 \input{Tabela_Setores_Cepii/Agregado.tex}
 
+As seguintes variáveis relacionadas a objetivos de notificações SPS e TBT foram significativas a nível de 5\%:
+\begin{itemize}
+    \item Consumer Information: $0.0818$;
+    \item Harmonization: $1.6080$;
+    \item Other: $43.9902$;
+    \item Plant Protection: $-0.0111$;
+    \item Protection Of Human Health or Safety: $-0.0089$;
+    \item Protection of the environment : $-0.43$
+\end{itemize}
+
+Por representar uma gama de notificações que não se encaixam nos demais objetivos, a interpretação da variável outros é difícil. Junto com as variáveis de informação ao consumidor e harmonização, possui impacto positivo sobre as exportações brasileiras. Isso condiz com a literatura, que afirma que as notificações informativas ao exportador beneficiam o comércio por comunicar aspectos importantes do mercado. O impacto da variável harmonização é maior, o que faz sentido, visto que as notificações com tal objetivo visam a adequação das regras de comércio em bases internacionais, equalizando as normas e deixando o ambiente mais competitivo. 
+
+Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas.
+
+
 \subsection{Regressão sem efeitos fixos e resultados setor por setor}
+
 
 \input{Tabela_Setores_Cepii/Resultado_Setor_a_Setor.tex}
 
