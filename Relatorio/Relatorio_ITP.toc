@@ -45,10 +45,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.11}Setor 11 - Produtos da indústria de moagem; malte; amidos e féculas; inulina; glúten de trigo}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.12}Setor 12 - Sementes e frutos oleaginosos; grãos, sementes e frutos diversos; plantas industriais ou medicinais; palhas e forragens}{17}%
+\contentsline {subsubsection}{\numberline {3.2.12}Setor 12 - Sementes e frutos oleaginosos; grãos, sementes e frutos diversos; plantas industriais ou medicinais; palhas e forragens}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.13}Setor 13 - Gomas, resinas e outros sucos e extractos vegetais}{17}%
+\contentsline {subsubsection}{\numberline {3.2.13}Setor 13 - Gomas, resinas e outros sucos e extractos vegetais}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.14}Setor 14 - Matérias para entrançar e outros produtos de origem vegetal, não especificados nem compreendidos noutros capítulos}{17}%
+\contentsline {subsubsection}{\numberline {3.2.14}Setor 14 - Matérias para entrançar e outros produtos de origem vegetal, não especificados nem compreendidos noutros capítulos}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.15}Setor 15 - Gorduras e óleos animais ou vegetais; produtos da sua dissociação; gorduras alimentares elaboradas; ceras de origem animal ou vegetal}{17}%
+\contentsline {subsubsection}{\numberline {3.2.15}Setor 15 - Gorduras e óleos animais ou vegetais; produtos da sua dissociação; gorduras alimentares elaboradas; ceras de origem animal ou vegetal}{21}%
