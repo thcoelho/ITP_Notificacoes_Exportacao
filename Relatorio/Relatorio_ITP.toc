@@ -7,9 +7,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Modelos de gravidade}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Estimador PPML}{3}%
+\contentsline {subsection}{\numberline {2.2}Estimador PPML}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Software}{3}%
+\contentsline {subsection}{\numberline {2.3}Software}{4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Justificativa para duas estimações}{4}%
 \defcounter {refsection}{0}\relax 
