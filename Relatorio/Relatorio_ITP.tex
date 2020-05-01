@@ -73,8 +73,8 @@ Onde:
 
 \begin{itemize}
     \item $X$ = Valor de exportação do Brasil para o país de destino no período;
-    \item $GDP_{O}$ = Renda do Brasil no período;
-    \item $GDP_{D}$ = Renda do país de destino no período;
+    \item $GDP_{O}$ = Produto interno bruto nominal do Brasil no período;
+    \item $GDP_{D}$ = Produto interno bruto nominal do país de destino no período;
     \item $dist$ = Distância em Quilômetros  do Brasil para o país de destino;
     \item $Tariff$ = Média ponderada das tarifas efetivamente aplicadas pelo país de destino ao Brasil no período;
     \item $\sum_{i=1}^{n} P$ = Conjunto de variáveis que indicam a quantidade de notificações emitidas por cada país e objetivo;
@@ -92,17 +92,17 @@ Obs: O período utilizado na análise é anual.
 Bases de dados utilizadas:
 
 \begin{enumerate}
-    \item Notificações: https://www.epingalert.org/en;
-    \item Valor de exportações: https://comtrade.un.org/;
-    \item PIB: Banco mundial, \cite{WB};
-    \item Variáveis \emph{Dummy}: \cite{CEPII};
-    \item Tarifas: WITS (World Integrated Trade Solution)
+    \item Notificações: Sistema de alerta de notificações EPING: https://www.epingalert.org/en;
+    \item Valor de exportações: Base de dados estatísticos sobre comércio internacional das Nações Unidas: https://comtrade.un.org/;
+    \item PIB: Sistema de dados abertos do banco mundial: https://data.worldbank.org/;
+    \item Variáveis \emph{Dummy}: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
+    \item Tarifas: WITS (World Integrated Trade Solution): https://wits.worldbank.org/.
 \end{enumerate}
 
 \newpage
 \section{Resultados}
 
-\subsection{Regressão com efeitos fixos e setores agregados}.
+\subsection{Regressão com efeitos fixos e setores agregados}
 
 \input{Tabela_Setores_Cepii/Agregado.tex}
 
