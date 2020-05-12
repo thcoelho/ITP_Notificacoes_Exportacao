@@ -25,15 +25,15 @@
 
 \section{Introdução}
 
-Com o advento da globalização, o valor das tarifas internacionais tem caído ao longo do tempo, isto diminui as oportunidades para implementação de medidas protecionistas \cite{maskus2000quantifying}. O foco passa então a ser as barreiras não tarifárias (BNTs), conjunto de fatores não tarifários que impedem o fluxo de bens internacionais.
+Com o advento da globalização o valor das tarifas internacionais tem caído ao longo do tempo, isto diminui as oportunidades para implementação de medidas protecionistas \cite{maskus2000quantifying}. O foco passa então a ser as barreiras não tarifárias (BNTs), conjunto de fatores não tarifários que impedem o fluxo de bens internacionais. Dentre as barreiras não tarifárias são inclusas as normas as quais os produtores devem se conformar para exportar para determinado país. Tais normas devem ser comunicadas aos demais países por meio de notificações, e são regulamentadas pela Organização Mundial do Comércio (OMC). Elas podem ser sanitárias ou fitossanitárias (SPS), associadas a produtos alimentícios, ou barreiras técnicas ao comércio (TBT), que ditam regras para que o produto se adeque ao mercado interno.
 
-Apesar de tais barreiras poderem ser legítimas, por exemplo para corrigir eventuais externalidades negativas advindas do produto importado,  o fato é que estas terão impacto nas importações do país. Este impacto pode ser positivo ou negativo, dependendo do setor analisado. Em geral, normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Os acordos SPS e TBT possuem o objetivo de:
+Apesar de tais barreiras poderem ser legítimas, por exemplo para corrigir eventuais externalidades negativas advindas do produto importado,  o fato é que estas terão impacto no comércio do país. Este impacto pode ser positivo ou negativo, dependendo do setor afetado, do objetivo da notificação e de seu conteúdo. Em geral, normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Os acordos SPS e TBT possuem o objetivo de:
 
 \begin{itemize}
     \item Encorajar membros a adequar seus produtos com base em regulamentações internacionais, visando melhor facilidade ao comércio internacional;
     \item Impedir a criação de barreiras arbitrárias e que não possuam embasamento científico;
     \item Manter a soberania do país para especificar normas de acordo com sua situação específica, desde que estas não visem prejudicar o fluxo de bens internacional;
-    \item Exige que novas normas que afetem o comércio sejam notificadas aos demais países, e que "pontos focais" devem ser estabelecidos. Estes são escritórios que visam melhorar a  transparência das normas estabelecidas pelo país em questão. O ponto focal brasileiro é o Inmetro.
+    \item Exigir que novas normas que afetem o comércio sejam notificadas aos demais países, e que "pontos focais" devem ser estabelecidos. Estes são escritórios que visam melhorar a  transparência das normas estabelecidas pelo país em questão. O ponto focal brasileiro é o Inmetro.
 \end{itemize}
 
 O presente trabalho visa explorar os impactos das notificações relacionadas a normas sanitárias e fitossanitárias  (SPS) e barreiras técnicas  (TBT). As notificações são categorizadas de acordo com seu objetivo, e é a partir de tal objetivo que distinguiremos os diferentes tipos de notificações e seus respectivos impactos.
@@ -41,17 +41,17 @@ O presente trabalho visa explorar os impactos das notificações relacionadas a 
 \section{Metodologia}
 \subsection{Modelos de gravidade}
 
-Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade. \cite{nascimento2013evoluccao}
+Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade, incluindo diversas variáveis como população, tarifas e efeitos fixos para unidade temporal e país \cite{nascimento2013evoluccao}.
 
 \subsection{Estimador PPML}
-Considerando os trabalhos que visam estabelecer quantitativamente o impacto das notificações, será utilizado um modelo de gravidade cujos estimadores serão estabelecidos por PPML (Poisson Pseudo Maximum Likelihood). Tal modo de estimação permite menor viés ao trabalharmos com fluxos internacionais, visto que muitas das observações de emissão de notificações ou de tarifas podem ser de valor nulo. Um modelo de regressão estimado por mínimos quadrados ordinários não está preparado para lidar com tais fluxos zero, o que deixar o resultado enviesado \cite{Log_Of_Gravity}.
+Considerando os trabalhos que visam estabelecer quantitativamente o impacto das notificações (\cite{impactosprodquimicos} e \cite{ALMEIDA2014}), será utilizado um modelo de gravidade cujos estimadores serão estabelecidos por PPML (Poisson Pseudo Maximum Likelihood). Tal modo de estimação permite menor viés ao trabalharmos com fluxos internacionais, visto que muitas das observações de emissão de notificações ou de tarifas podem ser de valor nulo. Um modelo de regressão estimado por mínimos quadrados ordinários não está preparado para lidar com tais fluxos zero, o que deixa o resultado enviesado \cite{Log_Of_Gravity}.
 
 \subsection{Software}
-Foi utilizado o pacote GME, escrito na linguagem de programação python pela USITC (United States Internacional Trade Commission). Tal pacote roda diagnósticos da ppml para confirmar que não houve erros na estimação, além de permitir a fácil inclusão dos efeitos fixos e da estimação setor por setor.
+Foi utilizado o pacote GME, escrito na linguagem de programação Python pela USITC (United States Internacional Trade Commission). Tal pacote roda diagnósticos da ppml para confirmar que não houve erros na estimação, além de permitir a fácil inclusão dos efeitos fixos e da estimação setor por setor.
 
 \subsection{Justificativa para duas estimações}
 
-Na literatura utilizada para basear este estudo, sempre se recomenda utilização de efeitos fixos para ano e país. Estes são variáveis dummy de valor 1 para cada ano e país diferente, isolando assim fatores não captáveis pelo modelo de cada ano ou país diferente. No entanto, isto cria grande quantidade de variáveis, e no caso da estimação setor por setor, aonde alguns destes possuem poucas observações, quebra uma das hipóteses dos modelos de regressão: é preciso ter mais observações que estimadores. Por isso, são feitos duas regressões: uma com efeitos fixos e válida para todos os 15 primeiros setores do sistema harmonizado em conjunto, e uma sem efeitos fixos, mas desagregada setor por setor.
+Na literatura utilizada para basear este estudo, sempre se recomenda utilização de efeitos fixos para ano e país. Estes são variáveis dummy de valor 1 para cada ano e país diferente, isolando assim fatores não captáveis pelo modelo relacionados a a estes. No entanto, isto cria grande quantidade de variáveis, e no caso da estimação setor por setor, aonde alguns destes possuem poucas observações, quebra uma das hipóteses dos modelos de regressão: é preciso ter mais observações que variáveis independentes. Por isso, são feitas duas regressões: uma com efeitos fixos e válida para todos os 15 primeiros setores do sistema harmonizado em conjunto, e uma sem efeitos fixos, mas desagregada setor por setor.
 
 \subsection{Variáveis do modelo}
 
@@ -95,7 +95,7 @@ Bases de dados utilizadas:
     \item Notificações: Sistema de alerta de notificações EPING: https://www.epingalert.org/en;
     \item Valor de exportações: Base de dados estatísticos sobre comércio internacional das Nações Unidas: https://comtrade.un.org/;
     \item PIB: Sistema de dados abertos do banco mundial: https://data.worldbank.org/;
-    \item Variáveis \emph{Dummy}: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
+    \item Distância, religião em comum, membros da união européia e da organização mundial do comércio e fronteiras em comum: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
     \item Tarifas: WITS (World Integrated Trade Solution): https://wits.worldbank.org/.
 \end{enumerate}
 
