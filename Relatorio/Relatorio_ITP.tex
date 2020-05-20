@@ -45,9 +45,12 @@ Levando em conta a estrtura de exportações do brasil:
 
 \input{Imagens/exportacoes.tex}
 
-Vemos que a maior parte das exportações brasileiras estão relacionadas ao setor vegetal (19\%), também há representação significativa do setor animal (6\%). Pela importância de tais categorias, é importante identificarmos eventuais gargalos a sua comercialização, entre estes as barreiras não tarifárias. Para observarmos  tais impactos iremos separar as notificações emitidas em categorias diferentes dependendo de seus objetivos e analisar o impacto de suas emissões sobre o valor de expotação do Brasil no mesmo período. Em geral, normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}.
+Vemos que a maior parte das exportações brasileiras estão relacionadas ao setor vegetal (19\%), também há representação significativa do setor animal (6\%). Pela importância de tais categorias, é importante identificarmos eventuais gargalos a sua comercialização, entre estes as barreiras não tarifárias. Para observarmos  tais impactos iremos separar as notificações emitidas em categorias diferentes dependendo de seus objetivos e analisar o impacto de suas emissões sobre o valor de exportação do Brasil no mesmo período. Em geral a literatura  nos diz que normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Regulamentações particularmente informativas irão diminuir a incerteza em tais transações, porém acompanhar tais notificações pode ser difícil para o micro e pequeno participante do agronegócio. 
 
 \section{Metodologia}
+
+Serão utilizados modelos econométricos de gravidade, que por meio de cálculos Poisson Pseudo Maximum Likelihood (PPML), irão retornar coeficientes para cada variável do modelo. Assim podemos observar os efeitos que cada variável posusi sobre os fluxos exportadores brasileiros.
+
 \subsection{Modelos de gravidade}
 
 Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade, incluindo diversas variáveis como população, tarifas e efeitos fixos para unidade temporal e país \cite{nascimento2013evoluccao}.
@@ -58,10 +61,6 @@ Considerando os trabalhos que visam estabelecer quantitativamente o impacto das 
 \subsection{Software}
 Foi utilizado o pacote GME, escrito na linguagem de programação Python pela USITC (United States Internacional Trade Commission). Tal pacote roda diagnósticos da ppml para confirmar que não houve erros na estimação, além de permitir a fácil inclusão dos efeitos fixos e da estimação setor por setor.
 
-\subsection{Justificativa para duas estimações}
-
-Na literatura utilizada para basear este estudo, sempre se recomenda utilização de efeitos fixos para ano e país. Estes são variáveis dummy de valor 1 para cada ano e país diferente, isolando assim fatores não captáveis pelo modelo relacionados a a estes. No entanto, isto cria grande quantidade de variáveis, e no caso da estimação setor por setor, aonde alguns destes possuem poucas observações, quebra uma das hipóteses dos modelos de regressão: é preciso ter mais observações que variáveis independentes. Por isso, são feitas duas regressões: uma com efeitos fixos e válida para todos os 15 primeiros setores do sistema harmonizado em conjunto, e uma sem efeitos fixos, mas desagregada setor por setor.
-
 \subsection{Variáveis do modelo}
 
 \begin{equation}
@@ -71,11 +70,11 @@ Na literatura utilizada para basear este estudo, sempre se recomenda utilizaçã
     + \ln dist 
     + \ln Tariff 
     + \sum_{i=1}^{n} P 
-    + Eu_{D} 
+    % + Eu_{D} 
     + contig 
-    + comrelig
-    + gatt_o 
-    + gatt_D
+    % + comrelig
+    % + gatt_o 
+    % + gatt_D
 \end{equation}
 
 Onde:
@@ -87,14 +86,14 @@ Onde:
     \item $dist$ = Distância em Quilômetros  do Brasil para o país de destino;
     \item $Tariff$ = Média ponderada das tarifas efetivamente aplicadas pelo país de destino ao Brasil no período;
     \item $\sum_{i=1}^{n} P$ = Conjunto de variáveis que indicam a quantidade de notificações emitidas por cada país e objetivo;
-    \item $Eu_{D}$ = Dummy que indica se o país de destino faz parte da União Europeia.
+    % \item $Eu_{D}$ = Dummy que indica se o país de destino faz parte da União Europeia.
     \item $contig$ = Dummy que indica se o Brasil possui fronteiras em comum com o país de destino;
-    \item $comrelig$ = Dummy que indica se os países possuem religiões difundidas em comum;
-    \item $gatt_O$ = Se o país (origem) é membro da Organização mundial do comércio;
-    \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
+    % \item $comrelig$ = Dummy que indica se os países possuem religiões difundidas em comum;
+    % \item $gatt_O$ = Se o país (origem) é membro da Organização mundial do comércio;
+    % \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
 \end{itemize}
 
-Obs: O período utilizado na análise é anual.
+Esta equação nos indica que as alterações percentuais no valor de exportações brasileiras são funções do PIB do Brasil e do país importador, da distância entre eles e da emissão ou não de notificações naquela substrato de tempo. O período utilizado na análise é anual.
 
 \subsection{Dados e fontes}
 
@@ -104,9 +103,19 @@ Bases de dados utilizadas:
     \item Notificações: Sistema de alerta de notificações EPING: https://www.epingalert.org/en;
     \item Valor de exportações: Base de dados estatísticos sobre comércio internacional das Nações Unidas: https://comtrade.un.org/;
     \item PIB: Sistema de dados abertos do banco mundial: https://data.worldbank.org/;
-    \item Distância, religião em comum, membros da união européia e da organização mundial do comércio e fronteiras em comum: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
+    \item Distância e fronteiras em comum: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
     \item Tarifas: WITS (World Integrated Trade Solution): https://wits.worldbank.org/.
 \end{enumerate}
+
+\subsection{Interpretação}
+
+\subsubsection{Coeficientes}
+
+Os coeficientes representam impactos percentuais nas exportações dada alteração de 1 ponto percentual na variável explicativa. Isso se dá pelo fato das variáveis estarem logaritmadas, o que não é verdadeiro para as variáveis relacionadas a notificações. Isto ocorre pelo fato do logaritmo natural de 0 ser indefinido, e como muitos objetivos de notificações possuem valor 0 para certos anos, logaritmar tal variável prejudicaria a acurácia do modelo. O valor da alteração causado pelas notificações portanto é de difícil interpretação, e é recomendável que o valor de tais coeficientes seja utilizado para determinar somente se o impacto de tal tipo de notificação é positivo ou negativo.
+
+\subsubsection{P-Valor}
+O p valor é uma medida estatística simples que nos indica a relevância de uma variável aos diversos níveis de significância. Nos dá uma probabilidade de encontrarmos uma amostra mais representativa da realidade do que a que temos atualmente. Se o p-valor de uma variável for menor que 5\% (0,05) então podemos concluir que tal variável rejeita a hipótese nula, que nos diz que a variável independente não imapcta a variável dependente (exportações).
+
 
 \newpage
 \section{Resultados}
@@ -115,25 +124,15 @@ Bases de dados utilizadas:
 
 \input{Tabela_Setores_Cepii/Agregado.tex}
 
-As seguintes variáveis relacionadas a objetivos de notificações SPS e TBT foram significativas a nível de 5\%:
-\begin{itemize}
-    \item Consumer Information: $0.0818$;
-    \item Harmonization: $1.6080$;
-    \item Other: $43.9902$;
-    \item Plant Protection: $-0.0111$;
-    \item Protection Of Human Health or Safety: $-0.0089$;
-    \item Protection of the environment : $-0.43$
-\end{itemize}
-
 Por representar uma gama de notificações que não se encaixam nos demais objetivos, a interpretação da variável outros é difícil. Junto com as variáveis de informação ao consumidor e harmonização, possui impacto positivo sobre as exportações brasileiras. Isso condiz com a literatura, que afirma que as notificações informativas ao exportador beneficiam o comércio por comunicar aspectos importantes do mercado. O impacto da variável harmonização é maior, o que faz sentido, visto que as notificações com tal objetivo visam a adequação das regras de comércio em bases internacionais, equalizando as normas e deixando o ambiente mais competitivo. 
 
 Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas.
 
 
-\subsection{Regressão sem efeitos fixos e resultados setor por setor}
+% \subsection{Regressão sem efeitos fixos e resultados setor por setor}
 
 
-\input{Tabela_Setores_Cepii/Resultado_Setor_a_Setor.tex}
+% \input{Tabela_Setores_Cepii/Resultado_Setor_a_Setor.tex}
 
 
 \printbibliography
