@@ -37,6 +37,8 @@ Apesar de tais barreiras poderem ser legítimas, por exemplo para corrigir event
     \item Exigir que novas normas que afetem o comércio sejam notificadas aos demais países, e que "pontos focais" devem ser estabelecidos. Estes são escritórios que visam melhorar a  transparência das normas estabelecidas pelo país em questão. O ponto focal brasileiro é o Inmetro.
 \end{itemize}
 
+Em geral a literatura  nos diz que normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Regulamentações particularmente informativas irão diminuir a incerteza em tais transações, porém acompanhar tais notificações pode ser difícil para o micro e pequeno participante do agronegócio. 
+
 O presente trabalho visa explorar os impactos das notificações relacionadas a normas sanitárias e fitossanitárias  (SPS) e barreiras técnicas  (TBT). As notificações são categorizadas de acordo com seu objetivo, e é a partir de tal objetivo que distinguiremos os diferentes tipos de notificações e seus respectivos impactos.
 
 \subsection{A relação das barreiras técnicas com o setor agroexportador}
@@ -45,7 +47,14 @@ Levando em conta a estrtura de exportações do brasil:
 
 \input{Imagens/exportacoes.tex}
 
-Vemos que a maior parte das exportações brasileiras estão relacionadas ao setor vegetal (19\%), também há representação significativa do setor animal (6\%). Pela importância de tais categorias, é importante identificarmos eventuais gargalos a sua comercialização, entre estes as barreiras não tarifárias. Para observarmos  tais impactos iremos separar as notificações emitidas em categorias diferentes dependendo de seus objetivos e analisar o impacto de suas emissões sobre o valor de exportação do Brasil no mesmo período. Em geral a literatura  nos diz que normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Regulamentações particularmente informativas irão diminuir a incerteza em tais transações, porém acompanhar tais notificações pode ser difícil para o micro e pequeno participante do agronegócio. 
+Vemos que a maior parte das exportações brasileiras estão relacionadas ao setor vegetal (19\%), também há representação significativa do setor animal (6\%). Pela importância de tais categorias, é importante identificarmos eventuais gargalos a sua comercialização, entre estes as barreiras não tarifárias. Para observarmos  tais impactos iremos separar as notificações emitidas em categorias diferentes dependendo de seus objetivos e analisar o impacto de suas emissões sobre o valor de exportação do Brasil no mesmo período.
+
+
+\subsection{Papel das instituições de fomento}
+
+\input{Imagens/Exportacao_2.tex}
+
+Em geral é possível perceber que as micro empresas e de pequeno porte não exportam. Como este trabalho irá desenvolver, existem gargalos relacionados a normas técnicas que podem criar desincentivos a comercialização de bens nacionais para o exterior. Por isso é de grande importância a existência de instituições como as da rede sibratec, que por meio da inovação tecnológica e prestação de serviços, visam equalizar a competição, oferecendo melhores oportunidades para o micro e pequeno empresário.
 
 \section{Metodologia}
 
@@ -93,7 +102,7 @@ Onde:
     % \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
 \end{itemize}
 
-Esta equação nos indica que as alterações percentuais no valor de exportações brasileiras são funções do PIB do Brasil e do país importador, da distância entre eles e da emissão ou não de notificações naquela substrato de tempo. O período utilizado na análise é anual.
+Esta equação nos indica que as alterações percentuais no valor de exportações brasileiras são funções do PIB do Brasil e do país importador, da distância entre os dois, e da emissão ou não de notificações naquele substrato de tempo. O período utilizado na análise é anual.
 
 \subsection{Dados e fontes}
 
@@ -109,12 +118,22 @@ Bases de dados utilizadas:
 
 \subsection{Interpretação}
 
+Pela natureza do estimador não tão utilizado e do fato de estarmos lidando com um modelo logaritmado, algumas precauções quanto a interpretação do modelo são necessárias:
+
 \subsubsection{Coeficientes}
 
 Os coeficientes representam impactos percentuais nas exportações dada alteração de 1 ponto percentual na variável explicativa. Isso se dá pelo fato das variáveis estarem logaritmadas, o que não é verdadeiro para as variáveis relacionadas a notificações. Isto ocorre pelo fato do logaritmo natural de 0 ser indefinido, e como muitos objetivos de notificações possuem valor 0 para certos anos, logaritmar tal variável prejudicaria a acurácia do modelo. O valor da alteração causado pelas notificações portanto é de difícil interpretação, e é recomendável que o valor de tais coeficientes seja utilizado para determinar somente se o impacto de tal tipo de notificação é positivo ou negativo.
 
 \subsubsection{P-Valor}
-O p valor é uma medida estatística simples que nos indica a relevância de uma variável aos diversos níveis de significância. Nos dá uma probabilidade de encontrarmos uma amostra mais representativa da realidade do que a que temos atualmente. Se o p-valor de uma variável for menor que 5\% (0,05) então podemos concluir que tal variável rejeita a hipótese nula, que nos diz que a variável independente não imapcta a variável dependente (exportações).
+O p valor é uma medida estatística simples que nos indica a relevância de uma variável aos diversos níveis de significância. Nos dá uma probabilidade de encontrarmos uma amostra mais representativa da realidade do que a que temos atualmente. Se o p-valor de uma variável for menor que o valor decimal do nível de significância escolhido, podemos concluir que tal variável rejeita a hipótese nula, que nos diz que a variável independente não impaccta a variável dependente (exportações). Sendo assim:
+
+\begin{itemize}
+    \item $P-valor < 0.1$ : variável significativa a $10\%$;
+    \item $P-valor < 0.05$ : variável significativa a $5\%$;
+    \item $P-valor < 0.001$ : variável significativa a $1\%$.
+\end{itemize}
+
+Quanto menor o p-valor, maior a confiança de que uma variável é significativa. Em geral o nível de significância utilizado por padrão é $5\% (p-valor < 0.05)$.
 
 
 \newpage
@@ -124,9 +143,20 @@ O p valor é uma medida estatística simples que nos indica a relevância de uma
 
 \input{Tabela_Setores_Cepii/Agregado.tex}
 
-Por representar uma gama de notificações que não se encaixam nos demais objetivos, a interpretação da variável outros é difícil. Junto com as variáveis de informação ao consumidor e harmonização, possui impacto positivo sobre as exportações brasileiras. Isso condiz com a literatura, que afirma que as notificações informativas ao exportador beneficiam o comércio por comunicar aspectos importantes do mercado. O impacto da variável harmonização é maior, o que faz sentido, visto que as notificações com tal objetivo visam a adequação das regras de comércio em bases internacionais, equalizando as normas e deixando o ambiente mais competitivo. 
+ Utilizando $5\%$ de significância, vamos isolar as variáveis relacionadas as notificações significativas:
 
-Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas.
+\begin{enumerate}
+    \item Informação ao consumidor: Impacto positivo;
+    \item Harmonização: Impacto positivo;
+    \item Proteção de plantas: Impacto negativo;
+    \item Proteção da saúde animal ou vegetal: Impacto negativo;
+    \item Proteger território de dano por pestes: Impacto negativo;
+    \item Proteção do meio ambiente: Impacto negativo.
+\end{enumerate}
+
+ As variáveis de informação ao consumidor e harmonização possuem impacto positivo sobre as exportações brasileiras. Isso condiz com a literatura, que afirma que as notificações informativas ao exportador beneficiam o comércio por caracterizar aspectos importantes do mercado externo. A variável harmonização visa a adequação das regras de comércio em bases internacionais, equalizando as normas e deixando o ambiente mais competitivo. 
+
+Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas. Tais variáveis podem nos ajudar a explicar a menor quantidade de empresas pequenas exportadoras. É mais compreensível que suas estruturas de custo não suportem aumentos muito significantes que venham a ser necessários para exportar seus produtos.
 
 
 % \subsection{Regressão sem efeitos fixos e resultados setor por setor}
