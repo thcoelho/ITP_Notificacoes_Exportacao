@@ -1,30 +1,26 @@
-\begin{table}[ht]
-\begin{center}
-\begin{tabular}{lcccccc}
-                                                                   & \textbf{Coeficiente} & \textbf{P-Valor}\\
-\midrule
-\textbf{Animal.health}                                             &       0.0265  &         0.029       \\
-\textbf{Consumer.information}                                      &       0.0666  &         0.333       \\
-\textbf{Food.safety}                                               &       0.0038  &         0.047       \\
-\textbf{Lower.barriers.to.trade}                                   &       0.5978  &         0.000       \\
-\textbf{Plant.protection}                                          &       0.1593  &         0.056       \\
-\textbf{Prevention.of.deceptive.practices.and.consumer.protection} &       0.0742  &         0.002       \\
-\textbf{Protect.humans.from.animal.plant.pest.or.disease}          &      -0.0298  &         0.402       \\
-\textbf{Protect.territory.from.other.damage.from.pests}            &      -0.2691  &         0.000       \\
-\textbf{Protection.of.Human.health.or.Safety}                      &      -0.0440  &         0.000       \\
-\textbf{Protection.of.the.environment}                             &       0.1256  &         0.005       \\
-\textbf{Quality.requirements}                                      &       0.1220  &         0.001       \\
-\textbf{ln\_gdp\_d}                                                &       0.0228  &         0.038       \\
-\textbf{ln\_gdp\_o}                                                &      -0.3665  &         0.000       \\
-\textbf{comrelig}                                                  &      -0.1021  &         0.022       \\
-\textbf{gatt\_d}                                                   &      -0.1121  &         0.100       \\
-\textbf{gatt\_o}                                                   &      11.8580  &         0.000       \\
-\textbf{eu\_d}                                                     &      -0.5416  &         0.000       \\
-\textbf{ln\_dist}                                                  &       0.0645  &         0.048       \\
-\textbf{contig}                                                    &       0.2156  &         0.000       \\
-\textbf{ln\_Tariff}                                                &       0.1088  &         0.000       \\
-\bottomrule
-\end{tabular}
-\caption{ Resultados Regressão Sem Efeitos Fixos - Setor 15}
-\end{center}
-\end{table}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+    \begin{tabular}{@{}l|l|l@{}}
+    \toprule
+    Variável                                          & Coeficiente & \multicolumn{1}{l|}{P-Valor} \\ \midrule
+    Saúde Animal                                      & 0.0175      & \multicolumn{1}{l|}{0.126}   \\ \midrule
+    Informação ao Consumidor                          & 0.0857      & 0.246                        \\ \midrule
+    Segurança alimentar                               & -0.0104     & 0.195                        \\ \midrule
+    Diminuição de barreiras ao comércio               & 0.1212      & 0.003                        \\ \midrule
+    Proteção de plantas                               & -0.0923     & 0.219                        \\ \midrule
+    Prevenção de práticas enganosas                   & 0.0647      & 0.006                        \\ \midrule
+    Proteger humanos de doenças de plantas ou animais & -0.0061     & 0.664                        \\ \midrule
+    Proteger território de dano por pestes            & -0.0641     & 0.179                        \\ \midrule
+    Proteção de saúde humana                          & 0.0010      & 0.915                        \\ \midrule
+    Proteção do meio ambiente                         & 0.1030      & 0.292                        \\ \midrule
+    Requerimentos de qualidade                        & 0.1023      & 0.154                        \\ \midrule
+    ln\_gdp\_d                                        & -0.8288     & 0.009                        \\ \midrule
+    ln\_gdp\_o                                        & 2.3238      & 0.001                        \\ \midrule
+    ln\_dist                                          & -4.2196     & 0.000                        \\ \midrule
+    contig                                            & 0.1159      & 0.108                        \\ \midrule
+    ln\_Tariff                                        & 0.0971      & 0.016                        \\ \bottomrule
+    \end{tabular}
+    \caption{Regressão capítulo 15}
+    \label{tab:my-table}
+    \end{table}

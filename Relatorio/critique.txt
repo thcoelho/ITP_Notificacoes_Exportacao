@@ -14,3 +14,9 @@ Tenhamos em mente que esse trabalho será lido por muitas pessoas que não são 
 Resultados:
 Discorrer sobre os resultados obtidos. O que significam? O que eles respondem a respeito do objetivo do trabalho e das hipóteses levantadas?
 Talvez, dado o volume de informações, as regressões devam ser colocadas como um anexo do trabalho, sendo trazida para discussão dos resultados, apenas gráficos ou tabelas resumidas, que tornem mais objetiva a observação dos resultados obtidos. O que acha?
+
+
+Notas:
+Soja, algodão - Código SH 15
+Café - Código SH 9
+Carne bovina - Código SH 2
