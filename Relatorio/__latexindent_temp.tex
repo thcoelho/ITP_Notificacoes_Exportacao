@@ -6,6 +6,7 @@
 \usepackage{microtype}
 \usepackage{indentfirst}
 \usepackage{graphicx}
+\usepackage{booktabs}
 \usepackage[style=abnt, backend=biber]{biblatex}
 \usepackage{csquotes}
 \addbibresource{Referencias.bib}
@@ -24,28 +25,172 @@
 
 \section{Introdução}
 
-Com o advento da globalização, as barreiras tradicionais ao comércio internacional, como as tarifárias, têm se tornado menores o que diminui as oportunidades para implementação de medidas protecionistas.\cite{maskus2000quantifying}. Isso tem causado aparecimento de diversas barreiras não tarifárias (BNTs), que impedem o fluxo internacional de bens.
-Apesar de estas barreiras poderem ser legítimas, por exemplo para corrigir eventuais externalidades negativas advindas do produto importado,  o fato é que estas terão impacto nas importações do país. Este impacto pode ser positivo ou negativo, dependendo do setor analisado. Em geral, normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}.
+\subsection{As barreiras não tarifárias ao comércio}
+Com o advento da globalização o valor das tarifas internacionais tem caído ao longo do tempo, isto diminui as oportunidades para implementação de medidas protecionistas \cite{maskus2000quantifying}. O foco passa então a ser as barreiras não tarifárias (BNTs), conjunto de fatores não tarifários que impedem o fluxo de bens internacionais. Dentre as barreiras não tarifárias são inclusas as normas as quais os produtores devem se conformar para exportar para determinado país. Tais normas devem ser comunicadas aos demais países por meio de notificações, e são regulamentadas pela Organização Mundial do Comércio (OMC). Elas podem ser sanitárias ou fitossanitárias (SPS), associadas a produtos alimentícios, ou barreiras técnicas ao comércio (TBT), que ditam regras para que o produto se adeque ao mercado interno.
+
+Apesar de tais barreiras poderem ser legítimas, por exemplo para corrigir eventuais externalidades negativas advindas do produto importado,  o fato é que estas terão impacto no comércio do país. Este impacto pode ser positivo ou negativo, dependendo do setor afetado, do objetivo da notificação e de seu conteúdo. Os acordos SPS e TBT possuem o objetivo de:
+
+\begin{itemize}
+    \item Encorajar membros a adequar seus produtos com base em regulamentações internacionais, visando melhor facilidade ao comércio internacional;
+    \item Impedir a criação de barreiras arbitrárias e que não possuam embasamento científico;
+    \item Manter a soberania do país para especificar normas de acordo com sua situação específica, desde que estas não visem prejudicar o fluxo de bens internacional;
+    \item Exigir que novas normas que afetem o comércio sejam notificadas aos demais países, e que "pontos focais" devem ser estabelecidos. Estes são escritórios que visam melhorar a  transparência das normas estabelecidas pelo país em questão. O ponto focal brasileiro é o Inmetro.
+\end{itemize}
+
+Em geral a literatura  nos diz que normas de importação tendem a diminuir o comércio para bens primários e impulsionar o comércio de bens mais complexos \cite{moenius}. Regulamentações particularmente informativas irão diminuir a incerteza em tais transações, porém acompanhar tais notificações pode ser difícil para o micro e pequeno participante do agronegócio. 
+
+O presente trabalho visa explorar os impactos das notificações relacionadas a normas sanitárias e fitossanitárias  (SPS) e barreiras técnicas  (TBT) na exportação de produtos agropecuários. Por isso utilizaremos o valor de exportação somente dos produtos presentes nos 15 primeiros capítulos do sistema harmonizado de categorização. As notificações são categorizadas de acordo com seu objetivo, e é a partir de tal objetivo que distinguiremos os diferentes tipos de notificações e seus respectivos impactos.
+
+\subsection{A relação das barreiras técnicas com o setor agroexportador} \label{barreiras}
+
+Levando em conta a estrutura de exportações do brasil:
+
+\input{Imagens/ComexStat.tex}
+
+Vemos que grande parte das exportações brasileiras estão relacionadas ao setor agropecuário: soja com 19\%, carne bovina com 3,2\%, café com 2,2\% e algodão com 1,7\%. Pela importância de tais categorias, é importante identificarmos eventuais gargalos a sua comercialização, entre estes as barreiras não tarifárias. Para observarmos  tais impactos iremos separar as notificações emitidas em categorias diferentes dependendo de seus objetivos e analisar o impacto de suas emissões sobre o valor de exportação do Brasil no mesmo período. Nossos resultados serão dispostos de modo a exibir o que influencia a exportação dos 15 primeiros capítulos do sistema harmonizado em agregado, e depois analisaremos alguns dos capítulos mais importantes de acordo com a caracterização das exportações brasileiras.
+
+\newpage
+
+\subsection{Papel governamental na diminuição de gargalos}
+
+\input{Imagens/Exportacao_2.tex}
+
+Em geral é possível perceber que as micro empresas e de pequeno porte não exportam. Como este trabalho irá desenvolver, existem gargalos relacionados a normas técnicas que podem criar desincentivos a comercialização de bens nacionais para o exterior, e tais gargalos podem afetar empresas menores desproporcionalmente. Por isso é de grande importância a existência de instituições como as da rede sibratec, que por meio da inovação tecnológica e prestação de serviços visam equalizar a competição, oferecendo melhores oportunidades para o micro e pequeno empresário. Tal fato pode ser impulsionado pela possibilidade visada pelo pequeno empreendedor em vender seu produto para uma empresa maior que tenha condições de lidar com tais custos. O governo tem então papel fundamental na diminuição de desigualdade de oportunidade entre o pequeno e o grande empreendedor. O seguinte gráfico obtido pela pesquisa da INNOVARE é refletido na coleta de dados oficial do ministério da economia quanto a CPFs e CNPJs exportadores:
+
+\input{Imagens/Empresas_Exportadoras.tex}
+
+
+
+\newpage
 
 \section{Metodologia}
 
-Considerando os trabalhos que visam estabelecer quantitativamente o impacto das notificações, será utilizado um modelo de gravidade cujos estimadores serão estabelecidos por PPML (Poisson Pseudo Maximum Likelihood). 
+Serão utilizados modelos econométricos de gravidade, que por meio de cálculos Poisson Pseudo Maximum Likelihood (PPML), irão retornar coeficientes para cada variável do modelo. Assim podemos observar os efeitos que cada variável possui sobre os fluxos exportadores brasileiros.
 
 \subsection{Modelos de gravidade}
 
-Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade. 
+Os modelos de gravidade são utilizados majoritariamente desde a década de 60 para a explicação de fluxos de comércio internacional. Originalmente derivado do modelo de Newton, utilizava a distância entre os dois objetos (países) e a massa deles (PIB), para explicar tal fluxo. Com o tempo, o desenvolvimento da área de economia internacional têm tornado o modelo cada vez mais teóricamente embasado e representativo da realidade, incluindo diversas variáveis como população, tarifas e efeitos fixos para unidade temporal e país \cite{nascimento2013evoluccao}.
 
-\section{Dados e fontes}
+\subsection{Estimador PPML}
+Considerando os trabalhos que visam estabelecer quantitativamente o impacto das notificações (\cite{impactosprodquimicos} e \cite{ALMEIDA2014}), será utilizado um modelo de gravidade cujos estimadores serão estabelecidos por PPML (Poisson Pseudo Maximum Likelihood). Tal modo de estimação permite menor viés ao trabalharmos com fluxos internacionais, visto que muitas das observações de emissão de notificações ou de tarifas podem ser de valor nulo. Um modelo de regressão estimado por mínimos quadrados ordinários não está preparado para lidar com tais fluxos zero, o que deixa o resultado enviesado \cite{Log_Of_Gravity}.
+
+\subsection{Software}
+Foi utilizado o pacote GME, escrito na linguagem de programação Python pela USITC (United States Internacional Trade Commission). Tal pacote roda diagnósticos da ppml para confirmar que não houve erros na estimação, além de permitir a fácil inclusão dos efeitos fixos e da estimação setor por setor.
+
+\subsection{Variáveis do modelo}
+
+\begin{equation}
+    \ln X_{D} = 
+    \ln GDP_{O} 
+    + \ln GDP_{D} 
+    + \ln dist 
+    + \ln Tariff 
+    + \sum_{i=1}^{n} P 
+    % + Eu_{D} 
+    + contig 
+    % + comrelig
+    % + gatt_o 
+    % + gatt_D
+\end{equation}
+
+Onde:
+
+\begin{itemize}
+    \item $X$ = Valor de exportação do Brasil para o país de destino no período;
+    \item $GDP_{O}$ = Produto interno bruto nominal do Brasil no período;
+    \item $GDP_{D}$ = Produto interno bruto nominal do país de destino no período;
+    \item $dist$ = Distância em Quilômetros  do Brasil para o país de destino;
+    \item $Tariff$ = Média ponderada das tarifas efetivamente aplicadas pelo país de destino ao Brasil no período;
+    \item $\sum_{i=1}^{n} P$ = Conjunto de variáveis que indicam a quantidade de notificações emitidas por cada país e objetivo;
+    % \item $Eu_{D}$ = Dummy que indica se o país de destino faz parte da União Europeia.
+    \item $contig$ = Dummy que indica se o Brasil possui fronteiras em comum com o país de destino;
+    % \item $comrelig$ = Dummy que indica se os países possuem religiões difundidas em comum;
+    % \item $gatt_O$ = Se o país (origem) é membro da Organização mundial do comércio;
+    % \item $gatt_D$ = Se o país (destino) é membro da Organização mundial do comércio.
+\end{itemize}
+
+Esta equação resume que as alterações percentuais no valor de exportações brasileiras são dependentes do PIB do Brasil e do país importador, da distância e existência de fronteiras em comum entre os dois, e da emissão ou não de diversos tipos de notificações naquele substrato de tempo. O período utilizado na análise é anual.
+
+\subsection{Dados e fontes}
 
 Bases de dados utilizadas:
 
 \begin{enumerate}
-    \item Notificações: https://www.epingalert.org/en;
-    \item Valor de exportações: https://comtrade.un.org/;
-    \item PIB : Banco mundial, \cite{WB};
-    \item Distanciamento: \cite{CEPII} 
+    \item Notificações: Sistema de alerta de notificações EPING: https://www.epingalert.org/en;
+    \item Valor de exportações: Base de dados estatísticos sobre comércio internacional das Nações Unidas: https://comtrade.un.org/;
+    \item PIB: Sistema de dados abertos do banco mundial: https://data.worldbank.org/;
+    \item Distância e fronteiras em comum: Base de dados para modelos gravitacionais da Centre d'Etudes Prospectives et d'Informations Internationales: \cite{CEPII};
+    \item Tarifas: WITS (World Integrated Trade Solution): https://wits.worldbank.org/.
 \end{enumerate}
 
+\subsection{Interpretação}
+
+Pela natureza do estimador não tão utilizado e do fato de estarmos lidando com um modelo em logaritmo, algumas precauções quanto a interpretação do modelo são necessárias:
+
+\subsubsection{Coeficientes}
+
+Os coeficientes representam impactos percentuais nas exportações dada alteração de 1 ponto percentual na variável explicativa, por exemplo de 5\% para 6\%. Isso se dá pelo fato das variáveis estarem logaritmadas, mas não no caso das variáveis relacionadas a notificações. Como o logaritmo natural de 0 é indefinido e muitos objetivos de notificações possuem valor 0 para certos anos, logaritmar tal variável prejudicaria a acurácia do modelo. O valor exato da alteração causado pelas notificações portanto é de difícil interpretação, e é recomendável que o valor de tais coeficientes seja utilizado para determinar somente se o impacto de tal tipo de notificação é positivo ou negativo.
+
+\subsubsection{P-Valor}
+O p-valor é uma medida estatística simples que nos indica a relevância de uma variável aos diversos níveis de significância. Nos dá uma probabilidade de encontrarmos uma amostra mais representativa da realidade do que a que temos atualmente. Se o p-valor de uma variável for menor que o valor decimal do nível de significância escolhido, podemos concluir que tal variável rejeita a hipótese nula, que nos diz que a variável independente não impacta a variável dependente (exportações). Sendo assim:
+
+\begin{itemize}
+    \item $P < 0.1$ : variável significativa a $10\%$;
+    \item $P < 0.05$ : variável significativa a $5\%$;
+    \item $P < 0.01$ : variável significativa a $1\%$.
+    \item $P < 0.001$ : variável significativa a $0.1\%$.
+\end{itemize}
+
+Quanto menor o p-valor, maior a confiança de que uma variável é significativa. Em geral o nível de significância utilizado por padrão é $5\%$ $(p-valor < 0.05)$.
+
+
+\newpage
+\section{Resultados}
+
+\subsection{Regressão com efeitos fixos e setores agregados}
+
+\input{Tabela_Setores_Cepii/Agregado.tex}
+
+\subsubsection{Variáveis não relacionadas a notificações}
+
+As variáveis de PIB foram ambas significativas e positivas, ou seja, aumentos na renda tanto do Brasil quanto do importador acarretam em maiores exportações. As variáveis que buscavam serem \emph{proxys} dos custos explícitos de exportação, como a distância, as fronteiras em comum e o valor efetivamente aplicado das tarifas tiveram resultados interessantes. A distância entre países foi significativa, e apresentou coeficiente negativo, o que condiz com a literatura: quanto maior a distância menor tende a ser o comércio entre os países. A variável \emph{contig}, que expressa se o país importador faz fronteira com o Brasil no entanto foi não significativa a 5\% e teve coeficiente negativo, o que não seria um comportamento esperado, especialmente levando em conta a variável anterior que nos diz que a distância tem relação negativa com o comércio. Porém analisando trabalhos parecidos, como \cite{ALMEIDA2014}, que faz medição semelhante porém desagregada para cada produto, observamos que isso pode ocorrer. No trabalho, os seguintes itens apresentam comportamento parecido:
+
+\begin{itemize}
+    \item Carne Bovina e miudezas de carnas curadas: Não significante;
+    \item Cortes bovinos, desossados e congelados: Significante e com impacto negativo;
+    \item Frango em pedaços congelado: Não significativo;
+    \item Óleo de soja Bruto: Não significativo;
+    \item Café verde, não torrado e não descafeinado: Significativo e com impacto negativo.
+\end{itemize}
+
+Percebe-se que todos estes produtos estão inclusos em nossa análise, que leva em conta os primeiros 15 capítulos do sistema harmonizado, todos estes ligados a produtos agropecuários. Tal comportamento portanto não seria em todo anormal. A variável de tarifas efetivamente aplicadas foi significativa somente a 10\% e teve coeficiente positivo, novamente contrariando o que seria deduzindo comumente. Segundo o mesmo trabalho citado acima, as tarifas tiveram impactos positivos para o comércio de soja, que, como exposto na seção \ref{barreiras} representa maior parte da exportação brasileira. Portanto, ao agregarmos estes vários produtos a maior representabilidade da soja pode ter enviesado os resultados. 
+
+\subsubsection{Variáveis relacionadas a notificações}
+
+ Utilizando 5\% como corte para a significância, vamos isolar as variáveis significativas relacionadas as notificações :
+
+ \begin{itemize}
+         \item Harmonização: Impacto positivo;
+         \item Proteção de plantas: Impacto negativo;
+         \item Proteger território de dano por pestes: Impacto negativo;
+         \item Proteção do meio ambiente: Impacto negativo.
+         \item Proteção da saúde animal ou vegetal: Impacto negativo;
+         \item Informação ao consumidor: Impacto positivo;
+ \end{itemize}
+
+ As variáveis de informação ao consumidor e harmonização possuem impacto positivo sobre as exportações brasileiras. Isso condiz com a literatura, que afirma que as notificações informativas ao exportador beneficiam o comércio por caracterizar aspectos importantes do mercado externo. A variável harmonização, por exemplo, visa a adequação das regras de comércio em bases internacionais, equalizando as normas e deixando o ambiente mais competitivo.
+
+Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas. A variável proteção ao meio ambiente, significativa a nível de 0.1\% pode significar possível oportunidade para execução de serviços relacionadas ao laboratórios da rede. Tais variáveis podem nos ajudar a explicar o fato de que empresas de menor porte tendem a nao ser exportadoras. É mais compreensível que suas estruturas de custo não suportem aumentos muito significativos que venham a ser necessários para exportar seus produtos.
+
+\newpage
+
+\subsection{Regressão sem efeitos fixos e resultados setor por setor}
+
+
+\input{Tabela_Setores_Cepii/Resultado_Setor_a_Setor.tex}
+
+
 \printbibliography
+
 
 \end{document}

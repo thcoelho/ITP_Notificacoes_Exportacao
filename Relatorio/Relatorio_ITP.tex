@@ -55,7 +55,13 @@ Vemos que grande parte das exportações brasileiras estão relacionadas ao seto
 
 \input{Imagens/Exportacao_2.tex}
 
-Em geral é possível perceber que as micro empresas e de pequeno porte não exportam. Como este trabalho irá desenvolver, existem gargalos relacionados a normas técnicas que podem criar desincentivos a comercialização de bens nacionais para o exterior, e tais gargalos podem afetar empresas menores desproporcionalmente. Por isso é de grande importância a existência de instituições como as da rede sibratec, que por meio da inovação tecnológica e prestação de serviços visam equalizar a competição, oferecendo melhores oportunidades para o micro e pequeno empresário.
+Em geral é possível perceber que as micro empresas e de pequeno porte não exportam. Como este trabalho irá desenvolver, existem gargalos relacionados a normas técnicas que podem criar desincentivos a comercialização de bens nacionais para o exterior, e tais gargalos podem afetar empresas menores desproporcionalmente. Por isso é de grande importância a existência de instituições como as da rede sibratec, que por meio da inovação tecnológica e prestação de serviços visam equalizar a competição, oferecendo melhores oportunidades para o micro e pequeno empresário. Tal fato pode ser impulsionado pela possibilidade visada pelo pequeno empreendedor em vender seu produto para uma empresa maior que tenha condições de lidar com tais custos. O governo tem então papel fundamental na diminuição de desigualdade de oportunidade entre o pequeno e o grande empreendedor. O seguinte gráfico obtido pela pesquisa da INNOVARE é refletido na coleta de dados oficial do ministério da economia quanto a CPFs e CNPJs exportadores:
+
+\input{Imagens/Empresas_Exportadoras.tex}
+
+
+
+\newpage
 
 \section{Metodologia}
 
@@ -135,7 +141,7 @@ O p-valor é uma medida estatística simples que nos indica a relevância de uma
     \item $P < 0.001$ : variável significativa a $0.1\%$.
 \end{itemize}
 
-Quanto menor o p-valor, maior a confiança de que uma variável é significativa. Em geral o nível de significância utilizado por padrão é $5\% (p-valor < 0.05)$.
+Quanto menor o p-valor, maior a confiança de que uma variável é significativa. Em geral o nível de significância utilizado por padrão é $5\%$ $(p-valor < 0.05)$.
 
 
 \newpage
@@ -144,6 +150,22 @@ Quanto menor o p-valor, maior a confiança de que uma variável é significativa
 \subsection{Regressão com efeitos fixos e setores agregados}
 
 \input{Tabela_Setores_Cepii/Agregado.tex}
+
+\subsubsection{Variáveis não relacionadas a notificações}
+
+As variáveis de PIB foram ambas significativas e positivas, ou seja, aumentos na renda tanto do Brasil quanto do importador acarretam em maiores exportações. As variáveis que buscavam serem \emph{proxys} dos custos explícitos de exportação, como a distância, as fronteiras em comum e o valor efetivamente aplicado das tarifas tiveram resultados interessantes. A distância entre países foi significativa, e apresentou coeficiente negativo, o que condiz com a literatura: quanto maior a distância menor tende a ser o comércio entre os países. A variável \emph{contig}, que expressa se o país importador faz fronteira com o Brasil no entanto foi não significativa a 5\% e teve coeficiente negativo, o que não seria um comportamento esperado, especialmente levando em conta a variável anterior que nos diz que a distância tem relação negativa com o comércio. Porém analisando trabalhos parecidos, como \cite{ALMEIDA2014}, que faz medição semelhante porém desagregada para cada produto, observamos que isso pode ocorrer. No trabalho, os seguintes itens apresentam comportamento parecido:
+
+\begin{itemize}
+    \item Carne Bovina e miudezas de carnas curadas: Não significante;
+    \item Cortes bovinos, desossados e congelados: Significante e com impacto negativo;
+    \item Frango em pedaços congelado: Não significativo;
+    \item Óleo de soja Bruto: Não significativo;
+    \item Café verde, não torrado e não descafeinado: Significativo e com impacto negativo.
+\end{itemize}
+
+Percebe-se que todos estes produtos estão inclusos em nossa análise, que leva em conta os primeiros 15 capítulos do sistema harmonizado, todos estes ligados a produtos agropecuários. Tal comportamento portanto não seria em todo anormal. A variável de tarifas efetivamente aplicadas foi significativa somente a 10\% e teve coeficiente positivo, novamente contrariando o que seria deduzindo comumente. Segundo o mesmo trabalho citado acima, as tarifas tiveram impactos positivos para o comércio de soja, que, como exposto na seção \ref{barreiras} representa maior parte da exportação brasileira. Portanto, ao agregarmos estes vários produtos a maior representabilidade da soja pode ter enviesado os resultados. 
+
+\subsubsection{Variáveis relacionadas a notificações}
 
  Utilizando 5\% como corte para a significância, vamos isolar as variáveis significativas relacionadas as notificações :
 
@@ -160,17 +182,7 @@ Quanto menor o p-valor, maior a confiança de que uma variável é significativa
 
 Podemos perceber que as variáveis relacionadas a proteção são as que impactam negativamente o comércio internacional. Isso pode significar que a adaptação dos produtos a esta pode ser particularmente difícil ou cara, o que seria compreensível, visto que tenderiam a ser mais rigorosas. A variável proteção ao meio ambiente, significativa a nível de 0.1\% pode significar possível oportunidade para execução de serviços relacionadas ao laboratórios da rede. Tais variáveis podem nos ajudar a explicar o fato de que empresas de menor porte tendem a nao ser exportadoras. É mais compreensível que suas estruturas de custo não suportem aumentos muito significativos que venham a ser necessários para exportar seus produtos.
 
-Considerando as variáveis não relacionadas com notificações: as de PIB foram ambas significativas e positivas, ou seja, aumentos na renda tanto do Brasil quanto do importador acarretam em maiores exportações. As variáveis que buscavam serem \emph{proxys} dos custos explícitos de exportação, como a distância, as fronteiras em comum e o valor efetivamente aplicado das tarifas tiveram resultados interessantes. A distância entre países foi significativa, e apresentou coeficiente negativo, o que condiz com a literatura: quanto maior a distância menor tende a ser o comércio entre os países. A variável \emph{contig}, que expressa se o país importador faz fronteira com o Brasil no entanto foi não significativa a 5\% e teve coeficiente negativo, o que não seria um comportamento esperado, especialmente levando em conta a variável anterior que nos diz que a distância tem relação negativa com o comércio. Porém analisando trabalhos parecidos, como \cite{ALMEIDA2014}, que faz medição semelhante porém desagregada para cada produto, observamos que isso pode ocorrer. No trabalho, os seguintes itens apresentam comportamento parecido:
-
-\begin{itemize}
-    \item Carne Bovina e miudezas de carnas curadas: Não significante;
-    \item Cortes bovinos, desossados e congelados: Significante e com impacto negativo;
-    \item Frango em pedaços congelado: Não significativo;
-    \item Óleo de soja Bruto: Não significativo;
-    \item Café verde, não torrado e não descafeinado: Significativo e com impacto negativo.
-\end{itemize}
-
-Percebe-se que todos estes produtos estão inclusos em nossa análise, que leva em conta os primeiros 15 capítulos do sistema harmonizado, todos estes ligados a produtos agropecuários. Tal comportamento portanto não seria em todo anormal. A variável de tarifas efetivamente aplicadas foi significativa somente a 10\% e teve coeficiente positivo, novamente contrariando o que seria deduzindo comumente. Segundo o mesmo trabalho citado acima, as tarifas tiveram impactos positivos para o comércio de soja, que, como exposto na seção \ref{barreiras} representa maior parte da exportação brasileira. Portanto, ao agregarmos estes vários produtos a maior representabilidade da soja pode ter enviesado os resultados.
+\newpage
 
 \subsection{Regressão sem efeitos fixos e resultados setor por setor}
 
